@@ -9,7 +9,7 @@
 } */
 /* X Navigation bar X */
 
-/*** Home ***/
+/************* Home  PT 1*****************/
 
 .img-bg {
   background: url(./img/work.jpg);
@@ -68,3 +68,17 @@
     width: 50%;
   }
 } */
+
+/*************home PT 2************/
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .icon-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
