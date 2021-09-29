@@ -9,7 +9,7 @@
 .img-bg {
   background: url(./img/work.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90vh;
   max-width: 100%;
   background-size: cover;
   background-position: right;
@@ -41,15 +41,15 @@
 }
 /* X Home X */
 @media screen and (min-width: 600px) {
-  .img-bg {
+  /* .img-bg {
     background: url(./img/work-final.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     background-position: center;
-  }
+  } */
   .title-btn-bg {
-    justify-content: center;
+    justify-content: left;
   }
 
   .home-title {
