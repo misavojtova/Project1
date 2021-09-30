@@ -64,3 +64,41 @@
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class = "buttons mdn">MDN</button></a>
           <a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class = "buttons w3">W3</button></a>
 </div>*/
+
+hr {
+  width: 100%;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  background-color: black;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 30px;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#reficons {
+  bottom: 0;
+  font-size: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#reficons a,
+#reficons a:active,
+#reficons a:hover {
+  color: #fff;
+  text-decoration: none;
+}
