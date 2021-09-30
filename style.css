@@ -159,26 +159,33 @@ footer {
 }
 
 
+/*CSS for Contact Page*/
+
+
+/*CSS for Contact Page - primeira linha: "Get in Touch" & "Our Team"*/
+
 .flex-container{
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    margin: 0px;
-    
+    margin-bottom: 1%;
 }
 
 .first-column{
-    width:40%;
-    padding: 5%;
-    margin-left: 10%;
+    width:45%;
+    padding-top: 5%;
+    margin-left: 6%;
+    margin-right: 5%;
+    margin-bottom: 2%;
     text-align: center;
 }
 
 .second-column{
-    padding: 5%;
-    width:60%;
-    margin-right: 60px;
-    text-align: right;
+    padding-top: 2%;
+    width:55%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    text-align: center;
 }
 
 .second-column2{
@@ -186,37 +193,44 @@ footer {
     justify-content: space-between;
 }
 
+/*CSS for Contact Page - 2ª linha: "Form" & "Find us here"*/
+
 .flex-container2{
     display: flex;
-    margin: 0px;
-    justify-content: space-around;
- 
+    margin: 2%;
+    justify-content: center;
+    align-items:baseline;
 }
 
 .form-column{
-    width:50%;
+    width:40%;
     padding: 0%;
-    margin-left: 10%;
+    margin-left: 12%;
     text-align:center;
 }
 
-.form-list{
-    list-style: none;
-    margin: 3%;
+input, select, textarea {
+    width: 90%;
+    padding:2%;
+    background-color:ghostwhite;
+    border: 1px solid #3B5998;
+    margin: 1%;
 }
 
 .but-column{
-    width:50%;
+    width:60%;
     text-align: center;
-    padding-top: 10%;;
+    margin-top: 5%;
+    margin-right: 15%;
 }
 
 .fa {
+    margin-right: 5%;
     padding: 20px;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 
 .fa-facebook {
@@ -233,10 +247,7 @@ footer {
     background: #55ACEE;
     color: white;
 }
-  
-  
-  .fa-linkedin {
+.fa-linkedin {
     background: #007bb5;
     color: white;
-}
-    justify-content: space-around;
+  }
