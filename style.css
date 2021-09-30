@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -7,9 +7,10 @@
 /*** Home ***/
 
 .img-bg {
+  display: flex;
   background: url(./img/work.jpg);
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   max-width: 100%;
   background-size: cover;
   background-position: right;
@@ -18,46 +19,90 @@
 .title-btn-bg {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
+  text-align: left;
   height: 100%;
-  width: 70%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* max-width: 60%; */
+  /* background-color: rgba(0, 0, 0, 0.37); */
 }
 
 .home-title {
   color: rgb(255, 255, 255);
   font-size: 2rem;
-  margin: 5rem 1rem;
+  margin: 0 2rem;
+}
+
+.parag {
+  display: none;
 }
 
 .btn {
   color: rgb(0, 0, 0);
   background-color: rgba(204, 0, 78, 0.952);
   padding: 1rem;
+  margin: 0 1rem;
   font-size: 1rem;
   border-radius: 2rem;
-  border: none;
-  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
-}
-/* X Home X */
-@media screen and (min-width: 600px) {
-  /* .img-bg {
-    background: url(./img/work-final.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-  } */
-  .title-btn-bg {
-    justify-content: left;
-  }
 
-  .home-title {
-    text-align: center;
-    line-height: 5rem;
+  max-width: 90%;
+  border: none;
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.349);
+}
+@media screen and (min-width: 600px) {
+  .title-btn-bg {
+    background-color: rgba(0, 0, 0, 0.37);
+    max-width: 60%;
+  }
+  .parag {
+    display: block;
+    max-width: 80%;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0rem 2rem;
+    /* line-height: 2rem; */
   }
   .btn {
     padding: 2rem;
     border-radius: 3rem;
+    max-width: 60%;
+    margin: 0 2rem;
+    font-weight: bold;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .img-bg {
+    display: flex;
+    /* background-position: center; */
+  }
+  .title-btn-bg {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    /* max-width: 60%; */
+    background-color: rgba(0, 0, 0, 0.37);
+  }
+
+  .home-title {
+    /* 5rem and 1 rem from mobile */
+    font-size: 2.5rem;
+    text-align: left;
+    /* margin: 0 2rem; */
+  }
+  .parag {
+    display: block;
+    max-width: 90%;
+    font-size: 2rem;
+    text-align: left;
+  }
+  /* .btn {
+    padding: 2rem;
+    border-radius: 3rem;
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0 2rem;
+    font-weight: bold;
+  } */
+}
+/* X Home X */
