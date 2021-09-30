@@ -13,13 +13,14 @@
   height: 100vh;
   max-width: 100%;
   background-size: cover;
-  background-position: right;
+  background-position: 80% 20%;
 }
 
 .title-btn-bg {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* align-items: center; */
   text-align: left;
   height: 100%;
@@ -28,9 +29,11 @@
 }
 
 .home-title {
-  color: rgb(255, 255, 255);
+  color: rgb(88, 0, 0);
   font-size: 2rem;
+  /* background-color: pink; */
   margin: 0 2rem;
+  width: 40%;
 }
 
 .parag {
@@ -40,17 +43,23 @@
 .btn {
   color: rgb(0, 0, 0);
   background-color: rgba(204, 0, 78, 0.952);
-  padding: 1rem;
+  padding: clamp(0.5rem, 1.4rem, 1.5rem);
+  padding-left: 0;
+  padding-right: 0;
   margin: 0 1rem;
   font-size: 1rem;
   border-radius: 2rem;
-
+  width: 50%;
   max-width: 90%;
   border: none;
   box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.349);
 }
 @media screen and (min-width: 600px) {
+  .img-bg {
+    background-position: right;
+  }
   .title-btn-bg {
+    margin-top: 0;
     background-color: rgba(0, 0, 0, 0.37);
     max-width: 60%;
   }
@@ -62,8 +71,12 @@
     margin: 0rem 2rem;
     /* line-height: 2rem; */
   }
+  .home-title {
+    color: white;
+    background-color: transparent;
+  }
   .btn {
-    padding: 2rem;
+    /* padding: 2.5rem 0 2.5rem 0s; */
     border-radius: 3rem;
     max-width: 60%;
     margin: 0 2rem;
@@ -74,7 +87,6 @@
 @media screen and (min-width: 800px) {
   .img-bg {
     display: flex;
-    /* background-position: center; */
   }
   .title-btn-bg {
     display: flex;
@@ -96,8 +108,17 @@
     font-size: 2rem;
     text-align: left;
   }
+  .btn {
+    padding: 2rem;
+    border-radius: 3rem;
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0 2rem;
+    font-weight: bold;
+  }
 }
 
+/* X Home X */
 /*************home PT 2************/
 
 .content {
@@ -134,13 +155,3 @@
   justify-content: center;
   align-items: center;
 }
-/* .btn {
-    padding: 2rem;
-    border-radius: 3rem;
-    min-width: 50%;
-    max-width: 50%;
-    margin: 0 2rem;
-    font-weight: bold;
-  } */
-
-/* X Home X */
