@@ -162,15 +162,15 @@ footer {
 /*CSS for Contact Page*/
 
 
-/*CSS for Contact Page - primeira linha: "Get in Touch" & "Our Team"*/
-
+/*CSS for Contact Page - first row: "Get in Touch" & "Our Team"*/
 .flex-container{
     display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
     margin-bottom: 1%;
 }
 
+/*CSS for Contact Page - first row: "Get in Touch"*/
 .first-column{
     width:45%;
     padding-top: 5%;
@@ -180,11 +180,12 @@ footer {
     text-align: center;
 }
 
+/*CSS for Contact Page - first row: "Our team"*/
 .second-column{
     padding-top: 2%;
     width:55%;
     margin-right: 15%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     text-align: center;
 }
 
@@ -194,18 +195,27 @@ footer {
 }
 
 /*CSS for Contact Page - 2ª linha: "Form" & "Find us here"*/
-
 .flex-container2{
     display: flex;
-    margin: 2%;
+    margin: 0%;
     justify-content: center;
-    align-items:baseline;
+    align-items:center;
 }
 
+/*CSS for Contact Page - 2ª row: "button for Form"*/
+.flex-container3{
+    display: block;
+    width: 45%;
+    margin-left: 6%;
+    justify-content: center;
+    text-align: center;
+}
+
+/*CSS for Contact Page - 2ª row: "container that opens after click on the button above"*/
 .form-column{
-    width:40%;
+    width:100%;
     padding: 0%;
-    margin-left: 12%;
+    margin-left: 0%;
     text-align:center;
 }
 
@@ -218,12 +228,13 @@ input, select, textarea {
 }
 
 .but-column{
-    width:60%;
+    width:55%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-right: 15%;
 }
 
+/*CSS for Contact Page - Code for the Social Media Buttons"*/
 .fa {
     margin-right: 5%;
     padding: 20px;
@@ -250,4 +261,17 @@ input, select, textarea {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+  }
+
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+.checked {
+    color: orange;
   }

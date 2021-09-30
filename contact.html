@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,17 +39,25 @@
           <h1 style="margin: 5%"><em> Get in Touch...</em></h1>
           <p><em> For more information, if you have any doubt or any suggestion, don't hesitate, contact us! We are eager to hear from you.</em></p>
         </div>
-        <div class="but-column">
-          <h3 style="margin: 3%;">Find us here:</h3>
-          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-          <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
-          <a href="https://www.google.com/" class="fa fa-google"></a>
-          <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+
+        <div class="second-column">
+          <h3 style="margin-bottom: 6%;"> Our team</h3>
+          <div class="second-column2">
+            <img src="\images\Post card.png" width="100px;">
+            <img src="\images\Post card.png" width="100px;">
+            <img src="\images\Post card.png" width="100px;">
+          </div>  
         </div>
       </div>
 
+    <!-- HTML for the second container-->
     <div class="flex-container2">
-      <form class="form-column">
+
+    <!-- HTML, second container, first column-->
+    <div class="flex-container3">
+      <button type="button" class="collapsible btn">Contact us</button>
+      <div class="content form-column">
+        <form><br>
         <label for="subject">Subject</label><br>
         <select name="subject" id="subject" placehokder="--">
           <option value="suggestion">Suggestion</option>
@@ -66,17 +75,26 @@
 
         <input id ="subbuton" type="submit" value="Send">
       </form>
-
-      <div class="second-column">
-        <h3 style="margin-bottom: 6%;"> Our team</h3>
-        <div class="second-column2">
-          <img src="\images\Post card.png" width="100px;">
-          <img src="\images\Post card.png" width="100px;">
-          <img src="\images\Post card.png" width="100px;">
-        </div>  
       </div>
     </div>
+
+    <!-- HTML, second container, second column-->
+    <div class="but-column">
+      <h3 style="margin: 1%;">Find us here:</h3>
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+      <a href="https://www.google.com/" class="fa fa-google"></a>
+      <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+    </div> 
+    </div>
     
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+
+
     <footer>
       <div>
         Made by:
@@ -106,6 +124,23 @@
         main.style.marginLeft = '0';
       };
     });
+
+ 
+/*CSS button for contact*/
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
     </script>
     <!--   main.style.marginLeft = '150px'; -->
   </body>
