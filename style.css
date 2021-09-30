@@ -31,7 +31,7 @@
 
 .title {
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 5rem 1rem;
 }
 
@@ -71,14 +71,37 @@
 
 /*************home PT 2************/
 
-.icon-list {
+.content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100vh;
 }
-@media screen and (min-width: 600px) {
-  .icon-list {
-    flex-direction: row;
-    justify-content: center;
-  }
+
+.text-container {
+  width: 50%;
+}
+
+.text {
+  max-width: 60vw;
+  padding: 20px;
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+
+.icon-img {
+  display: inline-block;
+  width: 50%;
+}
+.text-head {
+  padding: 30px;
+  font-size: 3rem;
+}
+.find-out {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.icon-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
