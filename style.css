@@ -12,7 +12,7 @@
 /*** Home ***/
 
 .img-bg {
-  background: url(./img/work.jpg);
+  background-image: url(./img/work.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100%;
@@ -45,6 +45,7 @@
   border: none;
   box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
 }
+
 /* X Home X */
 @media screen and (min-width: 500px) {
   .title {
@@ -57,6 +58,7 @@
     align-items: left;
   }
 }
+/*links*/
 
 /*@media screen and (min-width: 800px) {
   .left {
@@ -69,32 +71,89 @@
   }
 }*/
 
-/*navbar updates for desktop view
+/*media queries Nav bar*/
 
 .navbar {
-  list-style-type: none;
+  height: 65px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  background-color: black;
-}
-
-li {
-  margin: 2px 10px;
-  text-align: center;
-  text-decoration: none;
-}
-
-a:link,
-a:visited {
-  color: white;
-  padding: 0.5rem 1.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-a:active,
-a:hover {
-  text-decoration: none;
   background-color: gray;
 }
-*/
+.open-slide {
+  margin: 0 0 0 15px;
+  align-self: center;
+}
+#navquery {
+  visibility: hidden;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: black;
+  color: antiquewhite;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  transition: 0.5;
+}
+
+.side-nav a,
+.side-nav a:visited {
+  transition: 0.3;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px 10px 30px;
+  display: block;
+}
+.side-nav a:hover {
+  text-decoration: none;
+  background-color: lightgrey;
+  color: black;
+  opacity: 0.8;
+}
+
+#btn-close {
+  text-align: right;
+}
+
+@media screen and (min-width: 600px) {
+  .side-nav {
+    display: none;
+  }
+
+  #navquery {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-left: 25px;
+    margin: 0 0px;
+  }
+  #navquery li {
+    padding: 13px 0px;
+    margin: 0;
+  }
+
+  #navquery li a,
+  #navquery li a:visited {
+    color: white;
+    padding: 13px 10px;
+    text-decoration: none;
+  }
+  #navquery li a:hover {
+    text-decoration: none;
+    background-color: black;
+    margin: 0;
+  }
+}
+
+footer {
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
