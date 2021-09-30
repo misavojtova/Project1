@@ -1,31 +1,113 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#htmli">HTML</a></li>
-          <li><a href="#cssi">CSS</a></li>
-          <li><a href="#jsi">JavaScript</a></li>
-          <li><a href="#challenges">Challenges</a></li>
-          <li><a href="#contact">Contact us </a></li>
-        </ul>
+      <nav class="navbar">
+          <img src="./img/1057402791530273518-32.png" alt="menu icon" width="32px" height="32px" class="open-slide" id="open-slide">
+          <ul id="navquery" class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="htmli.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JS</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="contact.html">Contact us </a></li>
+          </ul>
       </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" id="btn-close" class="btn-close">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="htmli.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="contact.html">Contact us </a>
+      </div>
     </header>
+
+  <  <br style=background-color:blacklist-style: none;>>
+
+    <div class="flex-container">
+        <div class="first-column">
+          <h1><em> Get in Touch...</em></h1>
+          <p><em> For more information, if you have any doubt or any suggestion, don't hesitate, contact us! We are eager to hear from you.</em></p>
+        </div>
+        <div class="second-column">
+          <h2><em> Our team</em></h2>
+          <div class="second-column2">
+            <img src="\images\Post card.png" width="100px;">
+            <img src="\images\Post card.png" width="100px;">
+            <img src="\images\Post card.png" width="100px;">
+          </div>
+        </div>
+    </div>
+
+      <div class="flex-container2">
+        <form class="form-column">
+          <ul>
+            <li class="form-list"><label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."></li>
+
+            <li class="form-list"><label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."></li>
+
+            <li class="form-list"><label for="e-mail">E-mail</label><br>
+            <input type="email" placeholder="example@google.com"></li>
+
+            <li class="form-list"><label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea></li>
+
+            <li class="form-list"><input type="submit" value="Submit"></li>
+          </ul>
+        </form>
+
+        <div class="but-column">
+          <h3>Find us here:</h3>
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
     
-    <main>
-      <section id="contact">
-    
-         
-    </main>
-    
+  
     <footer>
-        <li><a href="#contact">Contact us </a></li>
+      <div>
+        Made by:
+      </div>
+      <div>Paulo</div>
+      <div>Michaela</div>
+      <div>David</div>
+      <div>Francesco</div>
+      <div>Vania</div>
     </footer>
-              
+    <script>
+      const sideMenu = document.getElementById('side-menu');
+    const openSlide = document.getElementById('open-slide');
+    const closeButton = document.getElementById('btn-close');
+    const main = document.querySelector('main');
+
+    openSlide.addEventListener('click' , function(e){
+        if(e.target.className == "open-slide"){
+            sideMenu.style.width= '150px';
+        };
+        
+        });
+    
+    closeButton.addEventListener('click' , function(event){
+      if(event.target.className == "btn-close"){
+        sideMenu.style.width= '0';
+        main.style.marginLeft = '0';
+      };
+    });
+    </script>
+    <!--   main.style.marginLeft = '150px'; -->
   </body>
 </html>
