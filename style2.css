@@ -79,17 +79,18 @@ footer {
 }
 
 .footer {
-  padding: 30px;
+  padding: 0;
   width: 100%;
   bottom: 10px;
   display: flex;
-
+  padding-top: 10px;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 #reficons {
   bottom: 0;
+  padding-top: 10px;
   font-size: 5px;
   display: flex;
   flex-direction: row;
