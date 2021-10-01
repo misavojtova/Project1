@@ -1,75 +1,177 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
-/*** Navigation bar ***/
-/* ul {
-  display: flex;
-} */
-/* X Navigation bar X */
 
-/*** Home ***/
+/************* Home  PT 1*****************/
 
 .img-bg {
-  background-image: url(./img/work.jpg);
+  display: flex;
+  background: url(./img/work.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100%;
   background-size: cover;
-  background-position: right;
+  background-position: 80% 20%;
 }
 
 .title-btn-bg {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  text-align: left;
   height: 100%;
-  width: 70%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* max-width: 60%; */
+  /* background-color: rgba(0, 0, 0, 0.37); */
 }
 
-.title {
-  color: rgb(255, 255, 255);
+.home-title {
+  color: rgb(88, 0, 0);
   font-size: 2rem;
-  margin: 5rem 1rem;
+  /* background-color: pink; */
+  margin: 0 2rem;
+  width: 40%;
+}
+
+.parag {
+  display: none;
 }
 
 .btn {
   color: rgb(0, 0, 0);
   background-color: rgba(204, 0, 78, 0.952);
-  padding: 1rem;
+  padding: clamp(0.5rem, 1.4rem, 1.5rem);
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 1rem;
   font-size: 1rem;
-  font-weight: 550;
   border-radius: 2rem;
+  width: 50%;
+  max-width: 90%;
   border: none;
-  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.349);
 }
 
-/* X Home X */
-@media screen and (min-width: 500px) {
-  .title {
-    font-size: 3rem;
+/* Homepage mobile and desktop colors */
+.content.html {
+  background-color: #ffe0a6;
+}
+.content.css {
+  background-color: #3da9e26e;
+}
+.content.js {
+  background-color: #f4f49580;
+}
+
+.text-container.html {
+  background-color: #ffa50038;
+}
+
+.text-container.css {
+  background-color: #94d3f3;
+}
+.text-container.js {
+  background-color: #ffff0036;
+}
+/* XX Homepage mobile and desktop colors XX */
+
+/* this is the style for mobile version*/
+.text-head {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.text-container {
+  min-width: 60%;
+  display: block;
+}
+
+.text {
+  max-width: 100vw;
+  padding: 5px;
+  display: block;
+  height: auto;
+  line-height: 1.5;
+}
+.icon-img {
+  display: inline-block;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .img-bg {
+    background-position: right;
   }
   .title-btn-bg {
-    width: 60%;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    max-width: 60%;
+  }
+  .parag {
+    display: block;
+    max-width: 80%;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0rem 2rem;
+    /* line-height: 2rem; */
+  }
+  .home-title {
+    color: white;
+    background-color: transparent;
+  }
+  .btn {
+    /* padding: 2.5rem 0 2.5rem 0s; */
+    border-radius: 3rem;
+    max-width: 60%;
+    margin: 0 2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .img-bg {
+    display: flex;
   }
   .title-btn-bg {
+    display: flex;
+    justify-content: space-around;
     align-items: left;
+    /* max-width: 60%; */
+    background-color: rgba(0, 0, 0, 0.37);
   }
-}
-/*links*/
 
-/*@media screen and (min-width: 800px) {
-  .left {
-    background-image: url(./img/work-left.jpg);
-    width: 50%;
+  .home-title {
+    /* 5rem and 1 rem from mobile */
+    font-size: 2.5rem;
+    text-align: left;
+    /* margin: 0 2rem; */
   }
-  .right {
-    background-image: url(./img/work.jpg);
-    width: 50%;
+  .parag {
+    display: block;
+    max-width: 90%;
+    font-size: 2rem;
+    text-align: left;
   }
-}*/
+  .btn {
+    padding: 2rem;
+    border-radius: 3rem;
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0 2rem;
+    font-weight: bold;
+  }
 
 /*media queries Nav bar*/
 
@@ -330,3 +432,40 @@ input, select, textarea {
     border: solid 1px black;
   }
   */
+  /* this is for desktop version*/
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .text-container {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .text {
+    max-width: 60vw;
+    padding: 20px;
+    font-size: 1.5rem;
+    /* line-height: 2.5; */
+  }
+
+  .icon-img {
+    min-width: 40%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .icon-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
