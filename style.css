@@ -162,15 +162,6 @@
 }
 
 /*CSS for Contact Page*/
-input, select, textarea {
-  width:98%;
-  padding:1%;
-  background-color:white;
-  border: 0px;
-  border-bottom: 1px solid gray;
-  margin: 1%
-}
-
 .m6x4-main{
   display: flex;
   height: 72%;
@@ -197,7 +188,6 @@ input, select, textarea {
   margin-right: 10%;
   }
 
-
 .column-c{
   display: block;
   width: 35%;
@@ -211,12 +201,14 @@ input, select, textarea {
 
     .subcolumn-c1-1{
       width: 50%;
-      background-color: white;
+      background-color: rgb(255, 255, 255);
     }
 
     .subcolumn-c1-2{
       width: 50%;
       background-color: blue;
+      display: flex;
+      align-items: center;
     }
 
   .subcolumn-c2{
@@ -228,13 +220,48 @@ input, select, textarea {
       margin:5%;
     }
 
-    .subcolumn-c3-2{
-      display: flex;
+    input, select, textarea {
+      width:98%;
+      padding:1%;
+      background-color:white;
+      border: 0px;
+      border-bottom: 1px solid gray;
+      margin: 1%
     }
 
       .subcolumn-c2-1-1{
         display: inline-flex;
         padding:4%;
         padding-left: 8%;
+      }
 
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
 
+.fa-facebook {
+  color: white;
+}
+
+.fa-google {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.btn1 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(204, 0, 78, 0.952);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 550;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 10px 10px 13px 0px rg
+}
