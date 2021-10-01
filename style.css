@@ -104,7 +104,6 @@
   display: block;
   margin: auto;
 }
-
 img {
   width: 100%;
   height: auto;
@@ -140,6 +139,7 @@ img {
     font-weight: bold;
   }
 }
+
 @media screen and (min-width: 800px) {
   .img-bg {
     display: flex;
