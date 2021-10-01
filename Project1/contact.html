@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="style2.css" />
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
   <body>
     <header>
       <nav class="navbar">
@@ -31,47 +31,51 @@
         <a href="contact.html">Contact us </a>
       </div>
     </header>
+
     
-    <main>
-      <section id="jsi">
-        <h1>JavaScript</h1>
-        <h2>Intro</h2>
-        <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus perspiciatis animi non laborum magni impedit modi eveniet, iusto neque.
-        </p>
-        <div class= "icons">
-          <img src = "./img/icons8-html-5-48.png">
+    <div class="flex-container">
+        <div class="first-column">
+          <h1 style="margin: 5%"><em> Get in Touch...</em></h1>
+          <p><em> For more information, if you have any doubt or any suggestion, don't hesitate, contact us! We are eager to hear from you.</em></p>
         </div>
-      </section> 
-      
-      <section id="html-sintax" >
-        <h2>Sintax</h2>
-        <p>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam explicabo voluptatum hic amet quo officiis dicta quisquam non magnam molestiae quibusdam minima consequatur commodi sapiente, laboriosam nulla laborum?
-        </p>
-        <a href=""><img src="./img/Html exemple.png" width="360" height="200" alt=""></a>
+        <div class="but-column">
+          <h3 style="margin: 3%;">Find us here:</h3>
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+          <a href="https://www.google.com/" class="fa fa-google"></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+        </div>
+      </div>
 
-      </section>
-      
-      <section id="html-att">
-        <h2>Attributes</h2>
-        <p>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam explicabo voluptatum hic amet quo officiis dicta quisquam non magnam molestiae quibusdam minima consequatur commodi sapiente, laboriosam nulla laborum?
-        </p>
-        <div>
-        <button class = "buttons mdn">MDN Website</button>
-        <button class = "buttons w3" >W3 Website</button>
-</div>
-      </section>
-      
-      <section id="html-challenge" >
-        <h2>Challenges</h2>
-        <p>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam explicabo voluptatum hic amet quo officiis dicta quisquam non magnam molestiae quibusdam minima consequatur commodi sapiente, laboriosam nulla laborum?
-        </p>
+    <div class="flex-container2">
+      <form class="form-column">
+        <label for="subject">Subject</label><br>
+        <select name="subject" id="subject" placehokder="--">
+          <option value="suggestion">Suggestion</option>
+          <option value="question">Question</option>
+          <option value="other">Other</option>
+        </select><br>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="contactform" placeholder="Your name..."><br>
 
-      </section>
-    </main>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="contactform" placeholder="example@google.com"><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="contactform" rows = "5" cols="20" placeholder="Write something..."></textarea><br>
+
+        <input id ="subbuton" type="submit" value="Send">
+      </form>
+
+      <div class="second-column">
+        <h3 style="margin-bottom: 6%;"> Our team</h3>
+        <div class="second-column2">
+          <img src="\images\Post card.png" width="100px;">
+          <img src="\images\Post card.png" width="100px;">
+          <img src="\images\Post card.png" width="100px;">
+        </div>  
+      </div>
+    </div>
     
     <footer>
       <div>
@@ -83,7 +87,6 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam expl
       <div>Francesco</div>
       <div>Vania</div>
     </footer>
-    
     <script>
       const sideMenu = document.getElementById('side-menu');
     const openSlide = document.getElementById('open-slide');

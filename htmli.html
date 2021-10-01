@@ -96,25 +96,43 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam expl
    </main>
     
     <hr>
+      const sideMenu = document.getElementById('side-menu');
+    const openSlide = document.getElementById('open-slide');
+    const closeButton = document.getElementById('btn-close');
+    const main = document.querySelector('main');
+
+    openSlide.addEventListener('click' , function(e){
+        if(e.target.className == "open-slide"){
+            sideMenu.style.width= '150px';
+        };
+        
+        });
+    
+    closeButton.addEventListener('click' , function(event){
+      if(event.target.className == "btn-close"){
+        sideMenu.style.width= '0';
+        main.style.marginLeft = '0';
+      };
+    });
+    </script>
+    <!--   main.style.marginLeft = '150px'; -->
+  </body>
+</html>
     <footer>
       <section class="footer">
         <span>
-          Made by:
-        </span>
-        <span>Paulo</span>
-        <span>Michaela</span>
-        <span>David</span>
-        <span>Francesco</span>
-        <span>Vania
+          Main Resources:
         </span>
       </section>
+        <span>MDN Website</span>
+        <span>W3 website</span>
       
       <section class="footer" id="reficons">
         <a href="https://icons8.com/icon/53871/internet" target="_blank">Internet icon by Icons8</a>
-        <a href="https://icons8.com/icon/20909/html-5" target="_blank">Html 5 icon by Icons8</a>
         <a href="https://icons8.com/icon/108784/javascript" target="_blank">JavaScript icon by Icons8</a>
-        <a href="https://icons8.com/icon/21278/css3" target="_blank">CSS3 icon by Icons8</a>
+        <a href="https://icons8.com/icon/20909/html-5" target="_blank">Html 5 icon by Icons8</a>
       </section>
+        <a href="https://icons8.com/icon/21278/css3" target="_blank">CSS3 icon by Icons8</a>
     </footer>
     
     <script>
@@ -128,8 +146,8 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam expl
             sideMenu.style.width= '150px';
         };
         
-        });
     
+        });
     closeButton.addEventListener('click' , function(event){
       if(event.target.className == "btn-close"){
         sideMenu.style.width= '0';

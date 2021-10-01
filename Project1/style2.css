@@ -7,25 +7,25 @@
   border: 0;
   padding: 10px;
   width: 45px;
-  font-size: 0.5rem;
   height: 45px;
+  font-size: 0.5rem;
   margin: 10px 15px;
   text-align: center;
   color: #fff;
-  border-radius: 50%;
   text-shadow: 1px 1px 1px #000;
+  border-radius: 50%;
   background-color: rgb(3, 138, 25);
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2) 30%,
     rgba(0, 0, 0, 0)
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
   );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
-.w3:hover {
 
+.w3:hover {
   background-color: rgb(8, 87, 21);
 }
 
@@ -36,8 +36,8 @@
 
 .mdn {
   border: 0;
-  width: 45px;
   padding: 10px;
+  width: 45px;
   height: 45px;
   font-size: 0.5rem;
   margin: 10px 15px;
@@ -61,13 +61,13 @@
 }
 
 .mdn:active {
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 /*<div class="link-buttons">
-            <a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class = "buttons w3">W3</button></a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class = "buttons mdn">MDN</button></a>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class = "buttons w3">W3</button></a>
   </div>*/
 
 hr {
@@ -82,12 +82,13 @@ footer {
   background-color: black;
   flex-direction: column;
 }
+
 .footer {
-  padding: 0;
+  padding: 30px;
   width: 100%;
   bottom: 10px;
   display: flex;
-  padding-top: 10px;
+
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -95,7 +96,6 @@ footer {
 #reficons {
   bottom: 0;
   font-size: 5px;
-  padding-top: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -114,10 +114,10 @@ footer {
   right: 5px;
   position: fixed;
 }
-p {
 
+p {
   font-size: 15px;
-  max-width: 70ch;
+  width: 90vw;
 }
 
 .img-css {
@@ -144,10 +144,9 @@ p {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 95%;
-  background-position-y: 80px;
   background-position-x: center;
+  background-position-y: 80px;
 }
-
 @media screen and (min-width: 600px) {
   .bodybg {
     background-image: none;
@@ -158,16 +157,14 @@ p {
 
   p {
     font-size: 17px;
-    max-width: 70ch;
   }
   .icons {
     top: 10px;
-
     float: right;
   }
-    
+
   .cssnr {
-      display: block;
+    display: block;
   }
 
   #sticky {
@@ -189,13 +186,13 @@ p {
   .mdn {
     border: 0;
     padding: 10px;
-    width: 80px;
     margin: 15px 20px;
-    font-size: 1rem;
+    width: 80px;
     height: 80px;
+    font-size: 1rem;
   }
-  .img-css {
 
+  .img-css {
     width: 30vw;
     right: 20px;
     opacity: 1;
@@ -203,24 +200,15 @@ p {
   #css-sintax {
     display: flex;
     justify-content: flex-start;
+    width: 90%;
     margin-left: 8px;
   }
-  .csssintax {
-overflow-wrap: normal;
+  #cssi p {
+    width: 75%;
   }
-    .body {
-    height: 100vh;
-    width: 100vw;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 0px;
-  
-  }
-  .css {
-    background-image: linear-gradient(90deg, blue 10%, white 10%, white 90%, blue 10%);
-  }
-    
-  .skeleton {
-    width: max(79%);
+  #cssart p,
+  #cssart h2 {
+    width: 50vw;
+    margin-left: 0;
   }
 }
