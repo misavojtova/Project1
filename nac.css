@@ -1,0 +1,152 @@
+/*media queries Nav bar*/
+
+.navbar {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: gray;
+}
+.open-slide {
+  margin: 0 0 0 15px;
+  align-self: center;
+}
+#navquery {
+  visibility: hidden;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: black;
+  color: antiquewhite;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  transition: 0.5;
+}
+
+.side-nav a,
+.side-nav a:visited {
+  transition: 0.3;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px 10px 30px;
+  display: block;
+}
+.side-nav a:hover {
+  text-decoration: none;
+  background-color: lightgrey;
+  color: black;
+  opacity: 0.8;
+}
+
+#btn-close {
+  text-align: right;
+}
+
+@media screen and (min-width: 600px) {
+  .side-nav {
+    display: none;
+  }
+
+  #navquery {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-left: 25px;
+    margin: 0 0px;
+  }
+  #navquery li {
+    padding: 13px 0px;
+    margin: 0;
+  }
+
+  #navquery li a,
+  #navquery li a:visited {
+    color: white;
+    padding: 13px 10px;
+    text-decoration: none;
+  }
+  #navquery li a:hover {
+    text-decoration: none;
+    background-color: black;
+    margin: 0;
+  }
+}
+
+/*CSS for Contact Page*/
+.m6x4-main {
+  display: flex;
+}
+
+.column-a {
+  width: 3%;
+  margin: 0%;
+}
+
+.subcolumn-a1 {
+  height: 46%;
+}
+
+.subcolumn-a2 {
+  height: 8%;
+  background-color: blue;
+}
+
+.column-b {
+  display: block;
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.column-c {
+  display: block;
+  width: 35%;
+  margin: 0%;
+  background-color: grey;
+}
+.subcolumn-c1 {
+  display: flex;
+  height: 12%;
+}
+
+.subcolumn-c1-1 {
+  width: 50%;
+  background-color: white;
+}
+
+.subcolumn-c1-2 {
+  width: 50%;
+  background-color: blue;
+}
+
+.subcolumn-c2 {
+  height: 76%;
+}
+
+.subcolumn-c2-1 {
+  display: block;
+  margin: 5%;
+}
+
+.subcolumn-c2-1-1 {
+  display: inline-flex;
+  padding: 6%;
+}
+
+input,
+select,
+textarea {
+  width: 98%;
+  padding: 1%;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid gray;
+  margin: 1%;
+}
