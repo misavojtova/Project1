@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <img src="./img/1057402791530273518-32.png" alt="menu icon" width="32px" height="32px" class="open-slide" id="open-slide">
+          <ul id="navquery" class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="begining.html">Begining</a></li>
+            <li><a href="htmli.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JS</a></li>
+            <li><a href="contact.html">Contact us </a></li>
+          </ul>
+      </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" id="btn-close" class="btn-close">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="begining.html">Begining</a>
+        <a href="htmli.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="contact.html">Contact us </a>
+      </div>
+    </header>
+    
+    <main>
+      <section id="jsi">
+        <h1>JavaScript</h1>
+        <h2>Intro</h2>
+        <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus perspiciatis animi non laborum magni impedit modi eveniet, iusto neque.
+        </p>
+        <div class= "icons">
+          <img src = "./img/icons8-html-5-48.png">
+        </div>
+      </section> 
+      
+      <section id="html-sintax" >
+        <h2>Sintax</h2>
+        <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam explicabo voluptatum hic amet quo officiis dicta quisquam non magnam molestiae quibusdam minima consequatur commodi sapiente, laboriosam nulla laborum?
+        </p>
+        <a href=""><img src="./img/Html exemple.png" width="360" height="200" alt=""></a>
+
+      </section>
+      
+      <section id="html-att">
+        <h2>Attributes</h2>
+        <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam explicabo voluptatum hic amet quo officiis dicta quisquam non magnam molestiae quibusdam minima consequatur commodi sapiente, laboriosam nulla laborum?
+        </p>
+        <div>
+        <button class = "buttons mdn">MDN Website</button>
+        <button class = "buttons w3" >W3 Website</button>
+</div>
+      </section>
+      
+      <section id="html-challenge" >
+        <h2>Challenges</h2>
+        <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nemo numquam explicabo voluptatum hic amet quo officiis dicta quisquam non magnam molestiae quibusdam minima consequatur commodi sapiente, laboriosam nulla laborum?
+        </p>
+
+      </section>
+    </main>
+    
+    <footer>
+      <div>
+        Made by:
+      </div>
+      <div>Paulo</div>
+      <div>Michaela</div>
+      <div>David</div>
+      <div>Francesco</div>
+      <div>Vania</div>
+    </footer>
+    
+    <script>
+      const sideMenu = document.getElementById('side-menu');
+    const openSlide = document.getElementById('open-slide');
+    const closeButton = document.getElementById('btn-close');
+    const main = document.querySelector('main');
+
+    openSlide.addEventListener('click' , function(e){
+        if(e.target.className == "open-slide"){
+            sideMenu.style.width= '150px';
+        };
+        
+        });
+    
+    closeButton.addEventListener('click' , function(event){
+      if(event.target.className == "btn-close"){
+        sideMenu.style.width= '0';
+        main.style.marginLeft = '0';
+      };
+    });
+    </script>
+    <!--   main.style.marginLeft = '150px'; -->
+  </body>
+</html>

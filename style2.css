@@ -1,0 +1,224 @@
+.link-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.w3 {
+  border: 0;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 0.5rem;
+  margin: 10px 15px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 50%;
+  background-color: rgb(3, 138, 25);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.w3:hover {
+  background-color: rgb(8, 87, 21);
+}
+
+.w3:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.mdn {
+  border: 0;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 0.5rem;
+  margin: 10px 15px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 50%;
+  background-color: rgb(82, 82, 82);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.mdn:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.mdn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*<div class="link-buttons">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class = "buttons mdn">MDN</button></a>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class = "buttons w3">W3</button></a>
+  </div>*/
+
+hr {
+  width: 100%;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  background-color: black;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 30px;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#reficons {
+  bottom: 0;
+  font-size: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#reficons a,
+#reficons a:active,
+#reficons a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#sticky {
+  width: 25px;
+  height: 25px;
+  top: 350px;
+  right: 5px;
+  position: fixed;
+}
+
+p {
+  font-size: 15px;
+  max-width: 70ch;
+}
+
+.img-css {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+h1 {
+  width: 65px;
+  margin-right: 0;
+}
+h1,
+h2,
+p {
+  margin-left: 30px;
+}
+.cssnr {
+  display: none;
+}
+.bodybg {
+  background-image: url("./img/logo-2582747_1280.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position-x: center;
+  background-position-y: 80px;
+}
+@media screen and (min-width: 600px) {
+  .bodybg {
+    background-image: none;
+  }
+  h1 {
+    display: block;
+  }
+
+  p {
+    font-size: 17px;
+    max-width: 70ch;
+  }
+  .icons {
+    top: 10px;
+    float: right;
+  }
+
+  .cssnr {
+    display: block;
+  }
+
+  #sticky {
+    width: 50px;
+    height: 50px;
+    top: 370px;
+    position: fixed;
+  }
+
+  .w3 {
+    border: 0;
+    padding: 10px;
+    margin: 15px 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .mdn {
+    border: 0;
+    padding: 10px;
+    margin: 15px 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .img-css {
+    width: 30vw;
+    right: 20px;
+    opacity: 1;
+  }
+  #css-sintax {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8px;
+  }
+  .csssintax {
+overflow-wrap: normal;
+  }
+  .body {
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+  }
+  
+  .css {
+    background-image: linear-gradient(90deg, blue 10%, white 10%, white 90%, blue 10%);
+  }
+  .skeleton {
+    width: max(79%);
+    
+  }
+}
