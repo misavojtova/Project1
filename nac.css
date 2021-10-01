@@ -13,10 +13,14 @@
   justify-content: flex-start;
   background-color: gray;
 }
-.open-slide {
+
+#open-slide {
   margin: 0 0 0 15px;
   align-self: center;
+  width: 32px;
+  height: 32px;
 }
+
 #navquery {
   visibility: hidden;
 }
@@ -83,84 +87,86 @@
     background-color: black;
     margin: 0;
   }
-  .open-slide {
+  #open-slide {
     visibility: hidden;
   }
 }
 
 /*CSS for Contact Page*/
-.m6x4-main{
+.m6x4-main {
   display: flex;
   height: 72%;
 }
 
-.column-a{
+.column-a {
   width: 3%;
   margin: 0%;
 }
 
-  .subcolumn-a1{
-    height: 46%;
-  }
+.subcolumn-a1 {
+  height: 46%;
+}
 
-  .subcolumn-a2{
-    height: 8%;
-    background-color: blue;
-  }
+.subcolumn-a2 {
+  height: 8%;
+  background-color: blue;
+}
 
-.column-b{
+.column-b {
   display: block;
   width: 60%;
   margin-left: 5%;
   margin-right: 10%;
-  }
+}
 
-.column-c{
+.column-c {
   display: block;
   width: 35%;
   margin: 0%;
   background-color: grey;
 }
-  .subcolumn-c1{
-    display: flex;
-    height: 12.5%;
-  }
+.subcolumn-c1 {
+  display: flex;
+  height: 12.5%;
+}
 
-    .subcolumn-c1-1{
-      width: 50%;
-      background-color: rgb(255, 255, 255);
-    }
+.subcolumn-c1-1 {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+}
 
-    .subcolumn-c1-2{
-      width: 50%;
-      background-color: blue;
-      display: flex;
-      align-items: center;
-    }
+.subcolumn-c1-2 {
+  width: 50%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
 
-  .subcolumn-c2{
-    height: 75%;
-  }
+.subcolumn-c2 {
+  height: 75%;
+}
 
-    .subcolumn-c2-1{
-      display:block;
-      margin:5%;
-    }
+.subcolumn-c2-1 {
+  display: block;
+  margin: 5%;
+}
 
-    input, select, textarea {
-      width:98%;
-      padding:1%;
-      background-color:white;
-      border: 0px;
-      border-bottom: 1px solid gray;
-      margin: 1%
-    }
+input,
+select,
+textarea {
+  width: 98%;
+  padding: 1%;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid gray;
+  margin: 1%;
+}
 
-      .subcolumn-c2-1-1{
-        display: inline-flex;
-        padding:4%;
-        padding-left: 8%;
-      }
+.subcolumn-c2-1-1 {
+  display: inline-flex;
+  padding: 4%;
+  padding-left: 8%;
+}
 
 /*footer*/
 
