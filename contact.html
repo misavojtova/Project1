@@ -1,3 +1,4 @@
+    <link rel="stylesheet" type="text/css" href="style2.css" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,16 +112,22 @@
     </div><br><br>
  
 
-    <footer>
-      <div>
-        Made by:
+        <label for="message">Message</label><br>
+        <textarea id="message" name="contactform" rows = "5" cols="20" placeholder="Write something..."></textarea><br>
+
+        <input id ="subbuton" type="submit" value="Send">
+      </form>
+
+      <div class="second-column">
+        <h3 style="margin-bottom: 6%;"> Our team</h3>
+        <div class="second-column2">
+          <img src="\images\Post card.png" width="100px;">
+          <img src="\images\Post card.png" width="100px;">
+          <img src="\images\Post card.png" width="100px;">
+        </div>  
       </div>
-      <div>Paulo</div>
-      <div>Michaela</div>
-      <div>David</div>
-      <div>Francesco</div>
-      <div>Vania</div>
-    </footer>
+    </div>
+    
     <script>
       const sideMenu = document.getElementById('side-menu');
     const openSlide = document.getElementById('open-slide');
@@ -161,3 +168,20 @@ for (i = 0; i < coll.length; i++) {
     <!--   main.style.marginLeft = '150px'; -->
   </body>
 </html>
+
+<footer>
+  <section class="footer">
+    <span>
+      Main Resources:
+    </span>
+    <span>W3 website</span>
+    <span>MDN Website</span>
+  </section>
+  
+  <section class="footer" id="reficons">
+    <a href="https://icons8.com/icon/53871/internet" target="_blank">Internet icon by Icons8</a>
+    <a href="https://icons8.com/icon/20909/html-5" target="_blank">Html 5 icon by Icons8</a>
+    <a href="https://icons8.com/icon/108784/javascript" target="_blank">JavaScript icon by Icons8</a>
+    <a href="https://icons8.com/icon/21278/css3" target="_blank">CSS3 icon by Icons8</a>
+  </section>
+</footer>
