@@ -159,3 +159,43 @@ textarea {
   border-bottom: 1px solid gray;
   margin: 1%;
 }
+
+/*footer*/
+
+hr {
+  width: 100%;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  background-color: black;
+  flex-direction: column;
+}
+.footer {
+  padding: 0;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#reficons {
+  bottom: 0;
+  font-size: 5px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#reficons a,
+#reficons a:active,
+#reficons a:hover {
+  color: #fff;
+  text-decoration: none;
+}
