@@ -1,3 +1,9 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 /*media queries Nav bar*/
 
 .navbar {
@@ -76,6 +82,9 @@
     text-decoration: none;
     background-color: black;
     margin: 0;
+  }
+  .open-slide {
+    visibility: hidden;
   }
 }
 
