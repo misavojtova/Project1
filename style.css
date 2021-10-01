@@ -55,6 +55,19 @@
   box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.349);
 }
 
+.btn-h {
+  background-color: #fe6d01;
+  padding: 10px;
+}
+
+.btn-c {
+  background-color: #039be5;
+}
+
+.btn-j {
+  background-color: rgba(253, 199, 4, 41);
+}
+
 /* Homepage mobile and desktop colors */
 .content.html {
   background-color: #ffe0a6;
