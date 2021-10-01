@@ -114,8 +114,9 @@
 
 .text {
   max-width: 100vw;
-  padding: 20px;
+  padding: 5px;
   display: block;
+  height: auto;
   line-height: 1.5;
 }
 .icon-img {
