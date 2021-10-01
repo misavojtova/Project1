@@ -90,6 +90,10 @@
   #open-slide {
     visibility: hidden;
   }
+
+  .footer {
+    font-size: 10px;
+  }
 }
 
 /*CSS for Contact Page*/
