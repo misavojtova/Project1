@@ -228,7 +228,13 @@ input, select, textarea {
       margin:5%;
     }
 
+    .subcolumn-c3-2{
+      display: flex;
+    }
+
       .subcolumn-c2-1-1{
         display: inline-flex;
         padding:4%;
         padding-left: 8%;
+
+

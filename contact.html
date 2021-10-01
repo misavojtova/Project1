@@ -65,7 +65,7 @@
           <input type="email" id="email" name="contactform" placeholder="example@google.com"><br>
           <label for="message"></label><br>
           <textarea id="message" name="contactform" rows = "2" cols="20" placeholder="Write something..."></textarea><br>
-          <input id ="btn-close" type="submit" value="Send">
+          <input id ="btn" class="btn" type="submit" value="Send">
           </form>
         </div>
       </div>
@@ -101,7 +101,9 @@
 
         <div class="subcolumn-c1">
           <div class="subcolumn-c1-1"></div>
-          <div class="subcolumn-c1-2"></div>
+          <div class="subcolumn-c3-2">
+            
+          </div>
         </div>
       </div>
     </div>
@@ -139,22 +141,6 @@
       };
     });
 
- 
-/*CSS button for contact*/
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
     </script>
     <!--   main.style.marginLeft = '150px'; -->
   </body>
