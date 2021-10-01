@@ -23,6 +23,7 @@
   /* align-items: center; */
   text-align: left;
   height: 100%;
+
   /* max-width: 60%; */
   /* background-color: rgba(0, 0, 0, 0.37); */
 }
@@ -73,8 +74,9 @@
   background-color: #94d3f3;
 }
 .text-container.js {
-  background-color: #ffff0036;
+  background-color: #ffd60075;
 }
+
 /* XX Homepage mobile and desktop colors XX */
 
 /* this is the style for mobile version*/
