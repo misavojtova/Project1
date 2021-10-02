@@ -78,7 +78,9 @@
 .content.js {
   background-color: #f4f49580;
 }
-
+.content.internet {
+  background-color: #e9e9e9;
+}
 .text-container.html {
   background-color: #ffa50038;
 }
@@ -88,6 +90,9 @@
 }
 .text-container.js {
   background-color: #ffd60075;
+}
+.text-container.internet {
+  box-shadow: 1px 1px 12px 0px rgb(0 0 0 / 15%);
 }
 
 /* XX Homepage mobile and desktop colors XX */
@@ -160,11 +165,11 @@ img {
     display: flex;
   }
   .title-btn-bg {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
-    align-items: left;
+    /* align-items: left; */
     /* max-width: 60%; */
-    background-color: rgba(0, 0, 0, 0.37);
+    /* background-color: rgba(0, 0, 0, 0.37); */
   }
 
   .home-title {
