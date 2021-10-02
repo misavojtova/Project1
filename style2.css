@@ -1,3 +1,5 @@
+/* I changed media query for min:800px, I added .skeleton margin: 0 auto;( because I had to remove the margin: 0 auto from *{} in nac.css) Michaela */
+
 .link-buttons {
   display: flex;
   justify-content: center;
@@ -20,12 +22,11 @@
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2) 30%,
     rgba(0, 0, 0, 0)
-    );
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 .w3:hover {
-
   background-color: rgb(8, 87, 21);
 }
 
@@ -70,7 +71,6 @@
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class = "buttons mdn">MDN</button></a>
   </div>*/
 
-
 #sticky {
   width: 25px;
   height: 25px;
@@ -79,7 +79,6 @@
   position: fixed;
 }
 p {
-
   font-size: 15px;
   max-width: 70ch;
 }
@@ -112,7 +111,7 @@ p {
   background-position-x: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .bodybg {
     background-image: none;
   }
@@ -129,9 +128,9 @@ p {
 
     float: right;
   }
-    
+
   .cssnr {
-      display: block;
+    display: block;
   }
 
   #sticky {
@@ -159,7 +158,6 @@ p {
     height: 80px;
   }
   .img-css {
-
     width: 30vw;
     right: 20px;
     opacity: 1;
@@ -170,21 +168,27 @@ p {
     margin-left: 8px;
   }
   .csssintax {
-overflow-wrap: normal;
+    overflow-wrap: normal;
   }
-    .body {
+  .body {
     height: 100vh;
     width: 100vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0px;
-  
   }
   .css {
-    background-image: linear-gradient(90deg, blue 10%, white 10%, white 90%, blue 10%);
+    background-image: linear-gradient(
+      90deg,
+      blue 10%,
+      white 10%,
+      white 90%,
+      blue 10%
+    );
   }
-    
+
   .skeleton {
+    margin: 0 auto;
     width: max(79%);
   }
 }

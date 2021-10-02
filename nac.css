@@ -1,13 +1,14 @@
 * {
-  margin: 0 auto;
-  box-sizing: border-box;
+  /* margin: 0 auto; Please apply "auto" for your specific classes, because it makes changes on my styles, in style.css I have *{margin:0}; Michaela */
+  /* box-sizing: border-box; This I applied for everything in style.css it can be deleted here */
   overflow-x: hidden;
 }
+/* What I changed in your file: .navbar:height:10vh,(I can explain why), @mediaQ (min:800), Michaela */
 
 /*media queries Nav bar*/
 
 .navbar {
-  height: 65px;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -57,7 +58,7 @@
   text-align: right;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .side-nav {
     display: none;
   }
