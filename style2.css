@@ -80,9 +80,9 @@
   right: 5px;
   position: fixed;
 }
-/*p {
+p {
   font-size: 15px;
-}*/
+}
 
 .img-css {
   display: flex;
@@ -97,9 +97,9 @@ h1 {
 }
 h1,
 h2,
-/*p {
+p {
   margin-left: 30px;
-}*/
+}
 .cssnr {
   display: none;
 }
@@ -111,7 +111,7 @@ h2,
   background-image: url("./img/logo-2582748_1280.webp") ;
 }
 .js{
-  background-image: none;
+  background-image: url("./img/java.png");
 }
 .internet{
   background-image: none;
@@ -124,6 +124,8 @@ h2,
   background-position-y: 80px;
   background-position-x: center;
 }
+
+
 
 @media screen and (min-width: 800px) {
   h1 {
