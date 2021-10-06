@@ -1,12 +1,13 @@
 /* I changed media query for min:800px, I added .skeleton margin: 0 auto;( because I had to remove the margin: 0 auto from *{} in nac.css) Michaela */
+
 * {
   margin: 0;
 }
+/*START Buttons */
 .link-buttons {
   display: flex;
   justify-content: center;
 }
-
 .w3 {
   border: 0;
   padding: 10px;
@@ -67,81 +68,130 @@
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+/* END buttons */
+
+.content-page.top {
+  height: 90vh;
+}
+.content-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  /* background-color: #ffe0a6; */
+}
 
 /*<div class="link-buttons">
             <a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class = "buttons w3">W3</button></a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class = "buttons mdn">MDN</button></a>
   </div>*/
 
-#sticky {
+/* #sticky {
   width: 25px;
   height: 25px;
   top: 350px;
   right: 5px;
   position: fixed;
-}
-p {
-  font-size: 15px;
-  max-width: 70ch;
-}
+} */
 
-.img-css {
+/* .img-css {
   display: flex;
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
   opacity: 0.8;
+} */
+p {
+  font-size: 15px;
+  max-width: 70ch;
 }
-h1 {
+/* h1 {
   width: 65px;
   margin-right: 0;
-}
-h1,
+} */
+/* h1,
 h2,
 p {
   margin-left: 30px;
-}
+} */
 .cssnr {
   display: none;
 }
 .bodybg {
-  background-image: url("./img/logo-2582747_1280.webp");
+  /* background-image: url("./img/logo-2582747_1280.webp"); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 95%;
   background-position-y: 80px;
   background-position-x: center;
 }
+.bodybg.html {
+  background-image: url(./img/logo-html.webp);
+}
 
 @media screen and (min-width: 800px) {
-  .bodybg {
+  .bodybg,
+  .bodybg.html {
     background-image: none;
   }
-  h1 {
+
+  /* h1 {
     display: block;
-  }
+  } */
 
   p {
     font-size: 17px;
     max-width: 70ch;
   }
+  .content-page {
+    position: relative;
+  }
+  .content-page.syn {
+    background-color: rgba(205, 134, 63, 0.521);
+  }
+  .content-page.chall {
+    background-color: rgba(255, 68, 0, 0.438);
+  }
   .icons {
+    position: absolute;
     top: 10px;
-
-    float: right;
+    right: 10px;
   }
-
-  .cssnr {
+  .title-descrip > h1 {
+    font-size: 2.4rem;
+    padding: 1rem 1rem;
+  }
+  .title-descrip > p {
+    font-size: 2rem;
+    padding: 1rem 1rem;
+  }
+  .title-descrip {
+    box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
+    margin: 2rem 2rem;
+    border-radius: 3rem;
+    background-color: #ff6d00c4;
+    width: 60%;
+  }
+  .img-anatomy {
+    margin: 0 2rem;
+  }
+  .img-syntax {
+    margin: 2rem 2rem;
+  }
+  .img-syntax > h2 {
+    margin: 2rem 0;
+  }
+  /* .cssnr {
     display: block;
-  }
+  } */
 
-  #sticky {
+  /* #sticky {
     width: 50px;
     height: 50px;
     top: 370px;
     position: fixed;
-  }
-
+  } */
+  /* START buttons */
   .w3 {
     border: 0;
     padding: 10px;
@@ -159,26 +209,21 @@ p {
     font-size: 1rem;
     height: 80px;
   }
-  .img-css {
+
+  /* END buttons */
+
+  /* .img-css {
     width: 30vw;
     right: 20px;
     opacity: 1;
-  }
-  #css-sintax {
+  } */
+
+  /* #css-sintax {
     display: flex;
     justify-content: flex-start;
     margin-left: 8px;
-  }
-  .csssintax {
-    overflow-wrap: normal;
-  }
-  .body {
-    height: 100vh;
-    width: 100vw;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 0px;
-  }
+  } */
+
   .css {
     background-image: linear-gradient(
       90deg,
@@ -188,7 +233,9 @@ p {
       blue 10%
     );
   }
-
+  .html {
+    background-color: #ffa50038;
+  }
   .skeleton {
     margin: 0 auto;
     width: max(79%);

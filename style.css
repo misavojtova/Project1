@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 a:focus {
-  color: transparent;
+  color: black;
 }
 /* START Aroow */
 .fas.fa-arrow-up {
@@ -22,6 +22,9 @@ a:focus {
 /* END Arrow*/
 
 /* Colors */
+.btn.i {
+  background-color: rgb(133 203 248);
+}
 .btn.h {
   background-color: #fe6d01;
 }
@@ -70,10 +73,11 @@ h2.home-title.diff-col {
   margin: 2rem 2rem 0 0;
 }
 .icon-text-redirect i {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
 }
 .icon-title {
   font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 .direction-icons {
@@ -140,6 +144,12 @@ h2.home-title.diff-col {
   font-size: 1rem;
   border: none;
   box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .content {
