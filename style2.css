@@ -91,6 +91,7 @@ p {
   margin-top: 15px;
   margin-bottom: 15px;
   opacity: 0.8;
+  z-index:1;
 }
 h1 {
   margin-right: 0;
@@ -103,8 +104,21 @@ p {
 .cssnr {
   display: none;
 }
-.bodybg {
+.css{
   background-image: url("./img/logo-2582747_1280.webp");
+  
+}
+.html{
+  background-image: url("./img/logo-2582748_1280.webp") ;
+}
+.js{
+  background-image: none;
+}
+.internet{
+  background-image: none;
+}
+
+.body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 95%;
@@ -113,9 +127,6 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .bodybg {
-    background-image: none;
-  }
   h1 {
     display: block;
   }
@@ -172,10 +183,11 @@ p {
     overflow-wrap: normal;
   }
   .body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position-y: 0px;
     margin: 0px;
   }
   .css {
@@ -190,10 +202,10 @@ p {
   .html{
     background-image: linear-gradient(
       90deg,
-      orange 10%,
+      rgb(254, 108, 0) 10%,
       white 10%,
       white 90%,
-      orange 10%
+      rgb(254, 108, 0) 10%
     );
   }
   .js{
