@@ -204,4 +204,14 @@ h2.home-title.diff-col {
   .icon-img {
     min-width: 40%;
   }
+
+  .m6x4-main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info.pad {
+    padding-left: 3%;
+  }
+
 }

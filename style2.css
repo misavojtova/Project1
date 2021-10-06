@@ -71,7 +71,7 @@
 /* START Page content mobile */
 
 .content-page.top {
-  height: 90vh;
+  height: 100vh;
 }
 .content-page {
   display: flex;
@@ -80,14 +80,51 @@
   height: 100vh;
 }
 
-.bodybg {
+/* p {
+  font-size: 15px;
+}
+
+.img-css {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  z-index:1;
+}
+h1 {
+  margin-right: 0;
+}
+h1,
+h2,
+p {
+  margin-left: 30px;
+}
+.cssnr {
+  display: none;
+} */
+
+.css {
+  background-image: url("./img/logo-2582747_1280.webp");
+}
+.html {
+  background-image: url("./img/logo-2582748_1280.webp");
+}
+.js {
+  background-image: url("./img/java.png");
+}
+.internet {
+  background-image: url("./img/internet.png");
+}
+
+.body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 95%;
   background-position-y: 80px;
   background-position-x: center;
 }
-.bodybg.html-background {
+.body.html-background {
   background-image: url(./img/logo-html.webp);
 }
 
@@ -142,9 +179,14 @@
 /* END of mobile */
 /* START of Desktop */
 @media screen and (min-width: 800px) {
-  /* KEEP */
-  .bodybg,
-  .bodybg.html-background {
+  .body {
+    background-image: none;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position-y: 80px;
+    background-position-x: center;
+  }
+  .body.html-background {
     background-image: none;
   }
 
@@ -181,6 +223,18 @@
     margin-left: 8px;
   } */
 
+  /* }
+  .csssintax {
+    overflow-wrap: normal;
+  }
+  .body {
+    height: 100%;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    margin: 0px;
+  } */
   .css {
     background-image: linear-gradient(
       90deg,
@@ -193,9 +247,159 @@
   .html-color {
     background-color: #ffa50038;
   }
+  /* .html{
+    background-image: linear-gradient(
+      90deg,
+      rgb(254, 108, 0) 10%,
+      white 10%,
+      white 90%,
+      rgb(254, 108, 0) 10%
+    );
+  } */
+  .js {
+    background-image: linear-gradient(
+      90deg,
+      yellow 10%,
+      white 10%,
+      white 90%,
+      yellow 10%
+    );
+  }
+  .internet {
+    background-image: linear-gradient(
+      90deg,
+      gray 10%,
+      white 10%,
+      white 90%,
+      gray 10%
+    );
+  }
+
   .skeleton {
     margin: 0 auto;
     width: max(79%);
+  }
+  .color-skeleton {
     background-color: #ffdb9b;
+  }
+}
+
+/*inner links sticky*/
+:root {
+  --div-border-size: 3.5px;
+}
+
+.sticky {
+  position: fixed;
+  float: none;
+  height: 10vh;
+  top: 0;
+  left: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+}
+
+.inner {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: black;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  font-size: 10px;
+  padding: 2.5px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9;
+  top: 0;
+}
+
+.inner::before {
+  content: " ";
+  border: var(--div-border-size) solid black;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 7;
+}
+
+.inner:hover::before,
+.inner:focus::before {
+  animation: test 2s ease-in-out;
+}
+
+@keyframes test {
+  0%,
+  100% {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  33%,
+  66% {
+    top: calc(var(--div-border-size) * -2);
+    left: calc(var(--div-border-size) * -2);
+    right: calc(var(--div-border-size) * -2);
+    bottom: calc(var(--div-border-size) * -2);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sticky {
+    position: fixed;
+    float: right;
+    top: 90px;
+    left: 90vw;
+    width: 10vw;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inner {
+    padding: 3px 6px;
+    margin: 8px 2px;
+    font-size: 1.25vw;
+    width: 10vw;
+    height: 5vh;
+  }
+  .inner:hover::before,
+  .inner:focus::before {
+    animation: test1 1.5s ease-in-out;
+  }
+  @keyframes test1 {
+    0%,
+    100% {
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    33%,
+    66% {
+      top: calc(var(--div-border-size) * -2);
+      left: calc(var(--div-border-size) * -2);
+      right: calc(var(--div-border-size) * -2);
+      bottom: calc(var(--div-border-size) * -2);
+      opacity: 0.25;
+      background-color: white;
+    }
   }
 }
