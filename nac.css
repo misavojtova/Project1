@@ -61,59 +61,17 @@
 
 #btn-close {
   text-align: right;
-}
+} 
 
-@media screen and (min-width: 800px) {
-  .navbar {
-    position: relative;
-  }
-  .side-nav {
-    display: none;
-  }
-
-  #navquery {
-    visibility: visible;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    padding-left: 25px;
-    margin: 0 0px;
-  }
-  #navquery li {
-    padding: 13px 0px;
-    margin: 0;
-  }
-
-  #navquery li a,
-  #navquery li a:visited {
-    color: white;
-    padding: 13px 10px;
-    text-decoration: none;
-  }
-  #navquery li a:hover {
-    text-decoration: none;
-    background-color: black;
-    margin: 0;
-  }
-  #open-slide {
-    visibility: hidden;
-  }
-
-  .footer {
-    font-size: 10px;
-  }
-}
 
 /*CSS for Contact Page*/
 .m6x4-main {
-  display: flex;
-  height: 72%;
+  display: block;
 }
 
 .column-a {
   width: 3%;
-  margin: 0%;
+  margin: 3%;
 }
 
 .subcolumn-a1 {
@@ -121,22 +79,23 @@
 }
 
 .subcolumn-a2 {
-  height: 8%;
-  background-color: blue;
+  height: 5%;
+  background-color: rgb(224, 194, 19);
 }
 
 .column-b {
   display: block;
   width: 60%;
-  margin-left: 5%;
+  margin-left: 20%;
   margin-right: 10%;
 }
 
 .column-c {
   display: block;
-  width: 35%;
-  margin: 0%;
-  background-color: grey;
+  width: 70%;
+  margin: 15%;
+  background-color:rgba(78, 73, 73, 0.041);
+
 }
 .subcolumn-c1 {
   display: flex;
@@ -150,7 +109,7 @@
 
 .subcolumn-c1-2 {
   width: 50%;
-  background-color: blue;
+  background-color: rgb(252, 252, 252);
   display: flex;
   align-items: center;
 }
@@ -161,7 +120,7 @@
 
 .subcolumn-c2-1 {
   display: block;
-  margin: 5%;
+  margin: 1%;
 }
 
 input,
@@ -178,7 +137,34 @@ textarea {
 .subcolumn-c2-1-1 {
   display: inline-flex;
   padding: 4%;
-  padding-left: 8%;
+  padding-left: 15%;
+}
+
+
+#btn-contact {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(224, 194, 19);
+  padding: 3vh;
+  border-radius: 3rem;
+  max-width: 30%;
+  margin-left: 35%;  
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
+}
+
+.contactInfo{
+  padding-left: 5rem;
+}
+
+.contactFS {
+  font-size: 1.25rem;
+}
+
+.shadowBox{
+  box-shadow: 3px 7px 13px 0px rgba(51, 49, 49, 0.363);
 }
 
 /*footer*/
@@ -219,4 +205,81 @@ footer {
 #reficons a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    position:relative;
+  }
+  .side-nav {
+    display: none;
+  }
+
+  #navquery {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-left: 25px;
+    margin: 0 0px;
+  }
+  #navquery li {
+    padding: 13px 0px;
+    margin: 0;
+  }
+
+  #navquery li a,
+  #navquery li a:visited {
+    color: white;
+    padding: 13px 10px;
+    text-decoration: none;
+  }
+  #navquery li a:hover {
+    text-decoration: none;
+    background-color: black;
+    margin: 0;
+  }
+  #open-slide {
+    visibility: hidden;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  
+/*  media querie for contact page */
+
+  .m6x4-main {
+    display: flex;
+    height: 80vh;
+  }
+  
+  .column-a {
+    width: 3%;
+    margin: 0;
+  }
+    
+  .column-b {
+    width: 60%;
+    margin: 3%;
+  }
+    
+  .column-c {
+    width: 35%;
+    margin: 0;
+    background-color:rgba(78, 73, 73, 0.041);
+  }
+
+  .subcolumn-c1-2 {
+    background-color: rgb(224, 194, 19);
+    display: flex;
+    align-items: center;
+  }
+
+  .shadowBox{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.96);
+  }
+
 }

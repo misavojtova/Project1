@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="nac.css" />
-    <title>Document</title>
+    <title>Contacti us</title>
   </head>
-  <body>
+  <body style="margin: 0;">
     <header>
       <nav class="navbar">
           <img src="./img/1057402791530273518-32.png" alt="menu icon" class="open-slide" id="open-slide">
@@ -34,7 +33,7 @@
     </header>
 
 
-    <div class="m6x4-main"> <!--Main container-->
+    <main class="m6x4-main"> <!--Main container-->
       <div class="column-a">
         <div class=subcolumn-a1></div>
         <div class=subcolumn-a2></div>
@@ -42,7 +41,6 @@
       </div>
 
       <div class="column-b">
-        <br><br>
         <div id="contact-title">
         <h2>Contact us</h2>
         </div><br>
@@ -64,9 +62,9 @@
           <label for="email"></label><br>
           <input type="email" id="email" name="contactform" placeholder="example@google.com"><br>
           <label for="message"></label><br>
-          <textarea id="message" name="contactform" rows = "2" cols="20" placeholder="Write something..."></textarea><br>
-          <input id ="btn" class="btn1" type="submit" value="Send">
-          </form>
+          <textarea id="message" name="contactf>orm" rows = "2" cols="20" placeholder="Write something..."></textarea><br><br>
+          <input id ="btn-contact" type="submit" value="Send">
+          </form><br>
         </div>
       </div>
       
@@ -77,24 +75,23 @@
         </div>
 
         <div class="subcolumn-c2">
-          <div class="subcolumn-c2-1">
-            <br>
-            <h3>Info</h3><br>
+          <div class="subcolumn-c2-1 shadowBox"><br>
+               <h3 class="contactFS contactInfo">WANT TO KNOW MORE?</h3>
             <div class="subcolumn-c2-1-1">
-              <img src="/Images/email.png" alt="email" width=35px;>
-              <p>e-mail@wild-school.com</p>
+              <img src="/Images/email.png" alt="email" width=50px;>
+              <h3 class="contactFS">e-mail@wild-school.com</h3>
             </div>
             <div class="subcolumn-c2-1-1">
-              <img src="/Images/adress.png" alt="adress" width=35px;>
-              <p>Rua do Conde Redondo, Lisbon</p>
+              <img src="/Images/adress.png" alt="adress" width=50px;>
+              <h3 class="contactFS">Rua do Conde Redondo, Lisbon</h3>
             </div>
             <div class="subcolumn-c2-1-1">
-              <img src="/Images/cellphone.png" alt="adress" width=35px;>
-              <p>+351 91X YYY ZZ</p>
+              <img src="/Images/cellphone.png" alt="adress" width=50px;>
+              <h3 class="contactFS">+351 91X YYY ZZ</h3>
             </div>
             <div class="subcolumn-c2-1-1">
-              <img src="/Images/schedule.png" alt="adress" width=35px;>
-              <p>9:00 to 17:00</p>
+              <img src="/Images/schedule.png" alt="adress" width=50px;>
+              <h3 class="contactFS"> monday to friday, 9:00 to 17:00</h3>
             </div>
           </div>
         </div>
@@ -106,14 +103,9 @@
             <a href="#" class="fa fa-google"></a>
             <a href="#" class="fa fa-linkedin"></a>
           </div>
-            
-
         </div>
-           
-          
-        
       </div>
-    </div>
+    </main>
     
     <footer>
       <section class="footer">
@@ -136,9 +128,15 @@
       
     <script>
       const sideMenu = document.getElementById('side-menu');
-    const openSlide = document.getElementById('open-slide');
-    const closeButton = document.getElementById('btn-close');
-    const main = document.querySelector('main');
+      const openSlide = document.getElementById('open-slide');
+      const closeButton = document.getElementById('btn-close');
+      const main = document.querySelector('main');
+
+      const sendmsg = document.getElementById("btn-contact").addEventListener("click", msgalert);
+      function msgalert() {
+        alert ("Message sent!");
+      }   
+
 
     openSlide.addEventListener('click' , function(e){
         if(e.target.className == "open-slide"){
@@ -152,6 +150,8 @@
         sideMenu.style.width= '0';
         main.style.marginLeft = '0';
       };
+
+      
     });
 
     </script>
