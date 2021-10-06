@@ -114,7 +114,7 @@ p {
   background-image: url("./img/java.png");
 }
 .internet{
-  background-image: none;
+  background-image: url("./img/internet.png");
 }
 
 .body {
@@ -216,6 +216,15 @@ p {
       white 10%,
       white 90%,
       yellow 10%
+    );
+  }
+  .internet{
+    background-image: linear-gradient(
+      90deg,
+      gray 10%,
+      white 10%,
+      white 90%,
+      gray 10%
     );
   }
 
