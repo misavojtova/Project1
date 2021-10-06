@@ -1,5 +1,7 @@
 /* I changed media query for min:800px, I added .skeleton margin: 0 auto;( because I had to remove the margin: 0 auto from *{} in nac.css) Michaela */
-
+* {
+  margin: 0;
+}
 .link-buttons {
   display: flex;
   justify-content: center;
