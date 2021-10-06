@@ -1,0 +1,128 @@
+/*creating sticky
+
+<div class="sticky">
+      <button class="inner">Intro</button>
+      <button class="inner">Sintax</button>
+      <button class="inner">Attributes</button>
+      <button class="inner">Exercises</button>
+      <button class="inner">Videos</button>
+  </div>
+
+*/
+
+:root {
+  --div-border-size: 2.5px;
+}
+
+.sticky {
+  position: fixed;
+  float: none;
+  height: 10vh;
+  top: 0;
+  left: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+}
+
+.inner {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: black;
+  background-color: gray;
+  font-size: 10px;
+  padding: 2.5px;
+  margin: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9;
+  top: 0;
+}
+
+.inner::before {
+  content: " ";
+  border: var(--div-border-size) solid black;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 7;
+}
+
+.inner:hover::before,
+.inner:focus::before {
+  animation: test 2.5s ease-in-out;
+}
+
+@keyframes test {
+  0%,
+  100% {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  33%,
+  66% {
+    top: calc(var(--div-border-size) * -2);
+    left: calc(var(--div-border-size) * -2);
+    right: calc(var(--div-border-size) * -2);
+    bottom: calc(var(--div-border-size) * -2);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .sticky {
+    position: fixed;
+    float: right;
+    top: 70px;
+    left: 90vw;
+    width: 10vw;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inner {
+    padding: 3px 6px;
+    margin: 8px 2px;
+    background-color: transparent;
+    font-size: 1.25vw;
+    width: 10vw;
+  }
+  .inner:hover::before,
+  .inner:focus::before {
+    animation: test1 2.5s ease-in-out;
+  }
+  @keyframes test1 {
+    0%,
+    100% {
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    33%,
+    66% {
+      top: calc(var(--div-border-size) * -2);
+      left: calc(var(--div-border-size) * -2);
+      right: calc(var(--div-border-size) * -2);
+      bottom: calc(var(--div-border-size) * -2);
+      opacity: 0.25;
+      background-color: white;
+    }
+  }
+}
