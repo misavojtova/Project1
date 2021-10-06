@@ -87,7 +87,7 @@
   background-position-y: 80px;
   background-position-x: center;
 }
-.bodybg.html {
+.bodybg.html-background {
   background-image: url(./img/logo-html.webp);
 }
 
@@ -97,9 +97,7 @@
 .content-page.syn {
   box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
 }
-.content-page.chall {
-  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
-}
+
 .icons {
   position: absolute;
   top: 10px;
@@ -120,9 +118,7 @@
   background-color: #ff6d00c4;
   max-width: 70%;
 }
-.title-descrip.syn {
-  background-color: ;
-}
+
 .img-anatomy {
   margin: 0 2rem;
 }
@@ -148,7 +144,7 @@
 @media screen and (min-width: 800px) {
   /* KEEP */
   .bodybg,
-  .bodybg.html {
+  .bodybg.html-background {
     background-image: none;
   }
 
@@ -194,11 +190,12 @@
       blue 10%
     );
   }
-  .html {
+  .html-color {
     background-color: #ffa50038;
   }
   .skeleton {
     margin: 0 auto;
     width: max(79%);
+    background-color: #ffdb9b;
   }
 }
