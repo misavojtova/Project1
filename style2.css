@@ -1,3 +1,4 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"); */
 * {
   margin: 0;
 }
@@ -181,8 +182,8 @@ p {
   .body {
     background-image: none;
     height: 100%;
-    width: 100vw;
-    background-size: 100% 100%;
+    /* width: 100vw; */
+    /* background-size: 100% 100%; */
     background-repeat: no-repeat;
     background-position-y: 0px;
     margin: 0px;
