@@ -285,7 +285,8 @@ footer {
   }
   #navquery li a:hover {
     text-decoration: none;
-    background-color: black;
+    border-radius: 3rem;
+    background-color: #0000005e;
     margin: 0;
   }
   #open-slide {
