@@ -5,8 +5,6 @@
 }
 /* What I changed in your file: .navbar:height:10vh,(I can explain why), @mediaQ (min:800), Michaela */
 
-/*media queries Nav bar*/
-
 .navbar {
   height: 10vh;
   display: flex;
@@ -21,6 +19,9 @@
 }
 .navbar.html {
   background-color: #ff7809;
+}
+.navbar.internet{
+  background-color: red;
 }
 
 #open-slide {
@@ -246,6 +247,9 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
+
+/*media queries Nav bar*/
 
 @media screen and (min-width: 800px) {
   .navbar {

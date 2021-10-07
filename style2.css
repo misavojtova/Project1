@@ -2,6 +2,9 @@
   margin: 0;
 }
 
+/*internet content*/
+
+
 /*START Buttons */
 .link-buttons {
   position:relative;
@@ -94,29 +97,34 @@ h1 {
   display: none;
 }
 
-.css {
-  background-image: url("./img/logo-2582747_1280.webp");
-}
-.html {
-  background-image: url("./img/logo-2582748_1280.webp");
-}
-.js {
-  background-image: url("./img/java.png");
-}
-.internet {
-  background-image: url("./img/internet.png");
-}
-
 .body {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 95%;
-  background-position-y: 80px;
   background-position-x: center;
 }
 .body.html-background {
   background-image: url(./img/logo-html.webp);
+  background-position-y: 80px;
+  background-size: 95%;
 }
+
+.css {
+  background-image: url("./img/logo-2582747_1280.webp");
+  background-position-y: 80px;
+  background-size: 95%;
+}
+
+.js {
+  background-image: url("./img/java.png");
+  background-position-y: 80px;
+  background-size: 95%;
+}
+.body.internet-background {
+  background-image: url("./img/internet.png");
+  background-size: 85%;
+  background-position-y: 120px;
+}
+
 .icons {
   top: 10px;
   float: right;
@@ -133,8 +141,13 @@ h1 {
   box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
   margin: 2rem 2rem;
   border-radius: 3rem;
-  background-color: #ff6d00c4;
   max-width: 70%;
+}
+.title-descrip.html-bg-color{
+  background-color: #ff6d00c4;
+}
+.title-descrip.internet-bg-color{
+  background-color: blue;
 }
 
 .img-anatomy {
@@ -174,6 +187,9 @@ h1 {
   .body.html-background {
     background-image: none;
   }
+  .body.internet-background {
+    background-image: none;
+  }
 
   .cssnr {
     display: block;
@@ -210,6 +226,9 @@ h1 {
   .html-color {
     background-color: #ffa50038;
   }
+  .internet{
+    background-color: lightblue;
+  }
   
 
   .skeleton {
@@ -218,6 +237,9 @@ h1 {
   }
   .color-skeleton-html {
     background-color: #ffdb9b;
+  }
+  .color-skeleton-internet{
+    background-color: lightcoral;
   }
 }
 .sandbox{
