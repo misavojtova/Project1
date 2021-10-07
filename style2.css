@@ -1,12 +1,12 @@
-/* I changed media query for min:800px, I added .skeleton margin: 0 auto;( because I had to remove the margin: 0 auto from *{} in nac.css) Michaela */
 * {
   margin: 0;
 }
+
+/*START Buttons */
 .link-buttons {
   display: flex;
   justify-content: center;
 }
-
 .w3 {
   border: 0;
   padding: 10px;
@@ -67,31 +67,31 @@
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+/* END buttons */
+/* START Page content mobile */
 
-/*<div class="link-buttons">
-            <a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class = "buttons w3">W3</button></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class = "buttons mdn">MDN</button></a>
-  </div>*/
-
-#sticky {
-  width: 25px;
-  height: 25px;
-  top: 350px;
-  right: 5px;
-  position: fixed;
+.content-page.top {
+  height: 100vh;
 }
+.content-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
 p {
   font-size: 15px;
-  max-width: 70ch;
 }
 
-.img-css {
+/* .img-css {
   display: flex;
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
   opacity: 0.8;
-}
+  z-index:1;
+} */
 h1 {
   margin-right: 0;
 }
@@ -103,44 +103,99 @@ p {
 .cssnr {
   display: none;
 }
-.bodybg {
+
+.css {
   background-image: url("./img/logo-2582747_1280.webp");
+}
+.html {
+  background-image: url("./img/logo-2582748_1280.webp");
+}
+.js {
+  background-image: url("./img/java.png");
+}
+.internet {
+  background-image: url("./img/internet.png");
+}
+
+.body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 95%;
   background-position-y: 80px;
   background-position-x: center;
 }
+.body.html-background {
+  background-image: url(./img/logo-html.webp);
+}
 
+/* .content-page {
+  position: relative;
+} */
+.content-page.syn {
+  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
+}
+
+.icons {
+  top: 10px;
+  float: right;
+}
+.title-descrip > h1 {
+  font-size: 2.2rem;
+  padding: 1rem 1rem;
+}
+.title-descrip > p {
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
+}
+.title-descrip {
+  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
+  margin: 2rem 2rem;
+  border-radius: 3rem;
+  background-color: #ff6d00c4;
+  max-width: 70%;
+}
+
+.img-anatomy {
+  margin: 0 2rem;
+}
+
+.img-syntax > h2 {
+  margin: 2rem 0;
+}
+.img-syntax {
+  max-width: 80%;
+  align-self: center;
+}
+.img-att {
+  max-width: 80%;
+  align-self: center;
+}
+.img-att > img,
+.img-syntax > img {
+  height: auto;
+  width: 100%;
+}
+/* END of mobile */
+/* START of Desktop */
 @media screen and (min-width: 800px) {
-  .bodybg {
+  .body {
     background-image: none;
+    height: 100%;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    margin: 0px;
   }
-  h1 {
-    display: block;
-  }
-
-  p {
-    font-size: 17px;
-    max-width: 70ch;
-  }
-  .icons {
-    top: 10px;
-
-    float: right;
+  .body.html-background {
+    background-image: none;
   }
 
   .cssnr {
     display: block;
   }
 
-  #sticky {
-    width: 50px;
-    height: 50px;
-    top: 370px;
-    position: fixed;
-  }
-
+  /* START buttons */
   .w3 {
     border: 0;
     padding: 10px;
@@ -158,26 +213,33 @@ p {
     font-size: 1rem;
     height: 80px;
   }
-  .img-css {
+
+  /* END buttons */
+
+  /* .img-css {
     width: 30vw;
     right: 20px;
     opacity: 1;
-  }
-  #css-sintax {
+  } */
+
+  /* #css-sintax {
     display: flex;
     justify-content: flex-start;
     margin-left: 8px;
-  }
+  } */
+
+  /* }
   .csssintax {
     overflow-wrap: normal;
   }
   .body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position-y: 0px;
     margin: 0px;
-  }
+  } */
   .css {
     background-image: linear-gradient(
       90deg,
@@ -187,16 +249,19 @@ p {
       blue 10%
     );
   }
-  .html{
+  .html-color {
+    background-color: #ffa50038;
+  }
+  /* .html{
     background-image: linear-gradient(
       90deg,
-      orange 10%,
+      rgb(254, 108, 0) 10%,
       white 10%,
       white 90%,
-      orange 10%
+      rgb(254, 108, 0) 10%
     );
-  }
-  .js{
+  } */
+  .js {
     background-image: linear-gradient(
       90deg,
       yellow 10%,
@@ -205,9 +270,141 @@ p {
       yellow 10%
     );
   }
+  .internet {
+    background-image: linear-gradient(
+      90deg,
+      gray 10%,
+      white 10%,
+      white 90%,
+      gray 10%
+    );
+  }
 
   .skeleton {
     margin: 0 auto;
     width: max(79%);
+  }
+  .color-skeleton {
+    background-color: #ffdb9b;
+  }
+}
+
+/*inner links sticky*/
+:root {
+  --div-border-size: 3.5px;
+}
+
+.sticky {
+  position: fixed;
+  float: none;
+  height: 10vh;
+  top: 0;
+  left: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+}
+
+.inner {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: black;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  font-size: 10px;
+  padding: 2.5px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9;
+  top: 0;
+}
+
+.inner::before {
+  content: " ";
+  border: var(--div-border-size) solid black;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 7;
+}
+
+.inner:hover::before,
+.inner:focus::before {
+  animation: test 2s ease-in-out;
+}
+
+@keyframes test {
+  0%,
+  100% {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  33%,
+  66% {
+    top: calc(var(--div-border-size) * -2);
+    left: calc(var(--div-border-size) * -2);
+    right: calc(var(--div-border-size) * -2);
+    bottom: calc(var(--div-border-size) * -2);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sticky {
+    position: fixed;
+    float: right;
+    top: 90px;
+    left: 90vw;
+    width: 10vw;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inner {
+    padding: 3px 6px;
+    margin: 8px 2px;
+    font-size: 1.25vw;
+    width: 10vw;
+    height: 5vh;
+  }
+  .inner:hover::before,
+  .inner:focus::before {
+    animation: test1 1.5s ease-in-out;
+  }
+  @keyframes test1 {
+    0%,
+    100% {
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    33%,
+    66% {
+      top: calc(var(--div-border-size) * -2);
+      left: calc(var(--div-border-size) * -2);
+      right: calc(var(--div-border-size) * -2);
+      bottom: calc(var(--div-border-size) * -2);
+      opacity: 0.25;
+      background-color: white;
+    }
   }
 }
