@@ -5,16 +5,17 @@
 
 /*START Buttons */
 .link-buttons {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: block;
+  text-align: center;
 }
 .w3 {
   border: 0;
+  width: 80px;
   padding: 10px;
-  width: 45px;
-  font-size: 0.5rem;
-  height: 45px;
-  margin: 10px 15px;
+  height: 80px;
+  font-size: 1rem;
+  margin: 15px 20px;
   text-align: center;
   color: #fff;
   border-radius: 50%;
@@ -40,11 +41,12 @@
 
 .mdn {
   border: 0;
-  width: 45px;
+  width: 80px;
   padding: 10px;
-  height: 45px;
-  font-size: 0.5rem;
-  margin: 10px 15px;
+  height: 80px;
+  font-size: 1rem;
+  margin: 15px 20px;
+
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
@@ -72,35 +74,27 @@
 /* START Page content mobile */
 
 .content-page.top {
-  height: 100vh;
+  margin-top: 10vh;
 }
 .content-page {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
+  height: 110vh;
+}
+
+.content-page.chall {
+  height: 140vh;
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
-/* .img-css {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  opacity: 0.8;
-  z-index:1;
-} */
 h1 {
   margin-right: 0;
 }
-h1,
-h2,
-p {
-  margin-left: 30px;
-}
+
 .cssnr {
   display: none;
 }
@@ -128,43 +122,40 @@ p {
 .body.html-background {
   background-image: url(./img/logo-html.webp);
 }
-
-/* .content-page {
-  position: relative;
-} */
-.content-page.syn {
-  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
-}
-
 .icons {
   top: 10px;
   float: right;
 }
 .title-descrip > h1 {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   padding: 1rem 1rem;
 }
 .title-descrip > p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 1rem 1rem;
 }
 .title-descrip {
   box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
-  margin: 2rem 2rem;
+  padding: 0.5rem;
+  align-self: center;
   border-radius: 3rem;
   background-color: #ff6d00c4;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .img-anatomy {
-  margin: 0 2rem;
+  width: 85%;
+  align-self: center;
 }
-
+.img-anatomy > img {
+  height: auto;
+  width: 100%;
+}
 .img-syntax > h2 {
-  margin: 2rem 0;
+  margin-bottom: 1.5rem;
 }
 .img-syntax {
-  max-width: 80%;
+  max-width: 95%;
   align-self: center;
 }
 .img-att {
@@ -176,117 +167,74 @@ p {
   height: auto;
   width: 100%;
 }
+.sandbox {
+  text-align: center;
+  max-width: 100%;
+}
+
+.sandbox-center {
+  margin: 0 1rem;
+}
 /* END of mobile */
 /* START of Desktop */
 @media screen and (min-width: 800px) {
   .body {
     background-image: none;
     height: 100%;
-    /* width: 100vw; */
-    /* background-size: 100% 100%; */
+
     background-repeat: no-repeat;
     background-position-y: 0px;
     margin: 0px;
+  }
+  .content-page.top {
+    margin-top: 0;
+  }
+
+  .img-anatomy {
+    width: 50%;
+  }
+
+  .img-syntax {
+    max-width: 80%;
   }
   .body.html-background {
     background-image: none;
   }
 
+  .title-descrip {
+    padding: 1rem;
+    margin-right: 2rem;
+    max-width: 70%;
+  }
+
   .cssnr {
     display: block;
+    float: right;
+    width: 144px;
+    height: 144px;
   }
 
-  /* START buttons */
-  .w3 {
-    border: 0;
-    padding: 10px;
-    margin: 15px 20px;
-    width: 80px;
-    height: 80px;
-    font-size: 1rem;
+  .sandbox-center {
+    margin: 0 4rem;
   }
-
-  .mdn {
-    border: 0;
-    padding: 10px;
-    width: 80px;
-    margin: 15px 20px;
-    font-size: 1rem;
-    height: 80px;
-  }
-
-  /* END buttons */
-
-  /* .img-css {
-    width: 30vw;
-    right: 20px;
-    opacity: 1;
-  } */
-
-  /* #css-sintax {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 8px;
-  } */
-
-  /* }
-  .csssintax {
+  /*.csssintax {
     overflow-wrap: normal;
   }
-  .body {
-    height: 100%;
-    width: 100vw;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position-y: 0px;
-    margin: 0px;
-  } */
-  .css {
-    background-image: linear-gradient(
-      90deg,
-      blue 10%,
-      white 10%,
-      white 90%,
-      blue 10%
-    );
-  }
+  */
+
   .html-color {
     background-color: #ffa50038;
-  }
-  /* .html{
-    background-image: linear-gradient(
-      90deg,
-      rgb(254, 108, 0) 10%,
-      white 10%,
-      white 90%,
-      rgb(254, 108, 0) 10%
-    );
-  } */
-  .js {
-    background-image: linear-gradient(
-      90deg,
-      yellow 10%,
-      white 10%,
-      white 90%,
-      yellow 10%
-    );
-  }
-  .internet {
-    background-image: linear-gradient(
-      90deg,
-      gray 10%,
-      white 10%,
-      white 90%,
-      gray 10%
-    );
   }
 
   .skeleton {
     margin: 0 auto;
     width: max(79%);
   }
-  .color-skeleton {
+  .color-skeleton-html {
     background-color: #ffdb9b;
+  }
+  .content-page.chall {
+    height: 120vh;
   }
 }
 
