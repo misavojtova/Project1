@@ -133,9 +133,15 @@ h1 {
   box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
   margin: 2rem 2rem;
   border-radius: 3rem;
-  background-color: #ff6d00c4;
   max-width: 70%;
 }
+.title-descrip.html-bg-color{
+  background-color: #ff6d00c4;
+}
+.title-descrip.js-bg-color{
+  background-color: rgb(221, 221, 120);
+}
+
 
 .img-anatomy {
   margin: 0 2rem;
@@ -174,6 +180,9 @@ h1 {
   .body.html-background {
     background-image: none;
   }
+  .body.js-background{
+    background-image: none;
+  }
 
   .cssnr {
     display: block;
@@ -210,6 +219,9 @@ h1 {
   .html-color {
     background-color: #ffa50038;
   }
+  .js-color{
+    background-color:rgb(240, 240, 172) ;
+  }
   
 
   .skeleton {
@@ -218,6 +230,9 @@ h1 {
   }
   .color-skeleton-html {
     background-color: #ffdb9b;
+  }
+  .color-skeleton-js{
+    background-color: rgb(111, 122, 69);
   }
 }
 .sandbox{

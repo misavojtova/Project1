@@ -22,6 +22,9 @@
 .navbar.html {
   background-color: #ff7809;
 }
+.navbar.js{
+  background-color: yellow;
+}
 
 #open-slide {
   margin: 0 0 0 15px;
