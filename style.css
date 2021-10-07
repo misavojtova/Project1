@@ -169,6 +169,7 @@ h2.home-title.diff-col {
   margin: auto;
 }
 
+
 @media screen and (min-width: 800px) {
   .direction-icons {
     width: 100%;
@@ -213,5 +214,5 @@ h2.home-title.diff-col {
   #info.pad {
     padding-left: 3%;
   }
-
+  
 }

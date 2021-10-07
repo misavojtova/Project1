@@ -4,8 +4,10 @@
 
 /*START Buttons */
 .link-buttons {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: block;
+  text-align: center;
+  max-width: 80%;
 }
 .w3 {
   border: 0;
@@ -81,25 +83,13 @@
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
-/* .img-css {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  opacity: 0.8;
-  z-index:1;
-} */
 h1 {
   margin-right: 0;
 }
-h1,
-h2,
-p {
-  margin-left: 30px;
-}
+
 .cssnr {
   display: none;
 }
@@ -127,24 +117,16 @@ p {
 .body.html-background {
   background-image: url(./img/logo-html.webp);
 }
-
-/* .content-page {
-  position: relative;
-} */
-.content-page.syn {
-  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
-}
-
 .icons {
   top: 10px;
   float: right;
 }
 .title-descrip > h1 {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   padding: 1rem 1rem;
 }
 .title-descrip > p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 1rem 1rem;
 }
 .title-descrip {
@@ -154,13 +136,18 @@ p {
   background-color: #ff6d00c4;
   max-width: 70%;
 }
+.title-descrip.css-bg-color {
+  background-color: #0177bd; /**color box */
+}
 
 .img-anatomy {
   margin: 0 2rem;
 }
-
+.img-anatomy > img {
+  max-width: 100vw;
+}
 .img-syntax > h2 {
-  margin: 2rem 0;
+  margin-bottom: 1.5rem;
 }
 .img-syntax {
   max-width: 80%;
@@ -181,8 +168,7 @@ p {
   .body {
     background-image: none;
     height: 100%;
-    width: 100vw;
-    background-size: 100% 100%;
+
     background-repeat: no-repeat;
     background-position-y: 0px;
     margin: 0px;
@@ -193,6 +179,9 @@ p {
 
   .cssnr {
     display: block;
+    float: right;
+    width: 144px;
+    height: 144px;
   }
 
   /* START buttons */
@@ -215,78 +204,33 @@ p {
   }
 
   /* END buttons */
-
-  /* .img-css {
-    width: 30vw;
-    right: 20px;
-    opacity: 1;
-  } */
-
-  /* #css-sintax {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 8px;
-  } */
-
-  /* }
-  .csssintax {
+  /*.csssintax {
     overflow-wrap: normal;
   }
-  .body {
-    height: 100%;
-    width: 100vw;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position-y: 0px;
-    margin: 0px;
-  } */
-  .css {
-    background-image: linear-gradient(
-      90deg,
-      blue 10%,
-      white 10%,
-      white 90%,
-      blue 10%
-    );
-  }
+  */
+
   .html-color {
     background-color: #ffa50038;
   }
-  /* .html{
-    background-image: linear-gradient(
-      90deg,
-      rgb(254, 108, 0) 10%,
-      white 10%,
-      white 90%,
-      rgb(254, 108, 0) 10%
-    );
-  } */
-  .js {
-    background-image: linear-gradient(
-      90deg,
-      yellow 10%,
-      white 10%,
-      white 90%,
-      yellow 10%
-    );
-  }
-  .internet {
-    background-image: linear-gradient(
-      90deg,
-      gray 10%,
-      white 10%,
-      white 90%,
-      gray 10%
-    );
+  .css-color {
+    background-color: #b1daf2; /*hereeeeeeeee*/
   }
 
   .skeleton {
     margin: 0 auto;
     width: max(79%);
   }
-  .color-skeleton {
-    background-color: #ffdb9b;
+  .color-skeleton-html {
+    background-color: #ffdb9b; /*hereeeeeeeee*/
   }
+
+  .color-skeleton-css {
+    background-color: #94d3f3; /*here#94d3f3eeeeeeee*/
+  }
+}
+.sandbox {
+  text-align: center;
+  max-width: 75%;
 }
 
 /*inner links sticky*/
