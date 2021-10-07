@@ -2,6 +2,9 @@
   margin: 0;
 }
 
+/*internet content*/
+
+
 /*START Buttons */
 .link-buttons {
   position: relative;
@@ -94,29 +97,34 @@ h1 {
   display: none;
 }
 
-.css {
-  background-image: url("./img/logo-2582747_1280.webp");
-}
-.html {
-  background-image: url("./img/logo-2582748_1280.webp");
-}
-.js {
-  background-image: url("./img/java.png");
-}
-.internet {
-  background-image: url("./img/internet.png");
-}
-
 .body {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 95%;
-  background-position-y: 80px;
   background-position-x: center;
 }
 .body.html-background {
   background-image: url(./img/logo-html.webp);
+  background-position-y: 80px;
+  background-size: 95%;
 }
+
+.css {
+  background-image: url("./img/logo-2582747_1280.webp");
+  background-position-y: 80px;
+  background-size: 95%;
+}
+
+.js {
+  background-image: url("./img/java.png");
+  background-position-y: 80px;
+  background-size: 95%;
+}
+.body.internet-background {
+  background-image: url("./img/internet.png");
+  background-size: 85%;
+  background-position-y: 120px;
+}
+
 .icons {
   top: 10px;
   float: right;
@@ -143,6 +151,9 @@ h1 {
 }
 .title-descrip.css-bg-color {
   background-color: #0177bd; /**color box */
+}
+.title-descrip.internet-bg-color{
+  background-color: blue;
 }
 
 
@@ -185,6 +196,9 @@ h1 {
   .body.js-background{
     background-image: none;
   }
+  .body.internet-background {
+    background-image: none;
+  }
 
   .cssnr {
     display: block;
@@ -224,6 +238,9 @@ h1 {
   .js-color{
     background-color:rgb(240, 240, 172) ;
   }
+  .internet{
+    background-color: lightblue;
+  }
   
   .css-color {
     background-color: #b1daf2; /*hereeeeeeeee*/
@@ -242,6 +259,9 @@ h1 {
 
   .color-skeleton-css {
     background-color: #94d3f3; /*here#94d3f3eeeeeeee*/
+  }
+  .color-skeleton-internet{
+    background-color: lightcoral;
   }
 }
 .sandbox {
