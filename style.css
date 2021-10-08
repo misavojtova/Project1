@@ -1,4 +1,5 @@
 * {
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -169,7 +170,6 @@ h2.home-title.diff-col {
   margin: auto;
 }
 
-
 @media screen and (min-width: 800px) {
   .direction-icons {
     width: 100%;
@@ -206,7 +206,7 @@ h2.home-title.diff-col {
     min-width: 40%;
   }
 
-  .m6x4-main{
+  .m6x4-main {
     display: flex;
     flex-direction: column;
   }
@@ -214,5 +214,4 @@ h2.home-title.diff-col {
   #info.pad {
     padding-left: 3%;
   }
-  
 }

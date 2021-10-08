@@ -5,8 +5,6 @@
 }
 /* What I changed in your file: .navbar:height:10vh,(I can explain why), @mediaQ (min:800), Michaela */
 
-/*media queries Nav bar*/
-
 .navbar {
   height: 10vh;
   display: flex;
@@ -22,8 +20,14 @@
 .navbar.html {
   background-color: #ff7809;
 }
+.navbar.js {
+  background-color: yellow;
+}
 .navbar.css {
   background-color: #289adce0;
+}
+.navbar.internet {
+  background-color: red;
 }
 
 #open-slide {
@@ -86,22 +90,26 @@
 
 .subcolumn-a2 {
   height: 5%;
-  background-color: rgb(224, 194, 19);
+  background-color: #c34a36;
+  -webkit-box-shadow: -8px 0px 15px -1px rgba(0, 0, 0, 0.62);
+  box-shadow: -8px 0px 15px -1px rgba(0, 0, 0, 0.62);
 }
 
 .column-b {
   display: block;
-  width: 60%;
-  margin-left: 20%;
+  width: 80%;
+  margin-top: 20%;
+  margin-left: 10%;
   margin-right: 10%;
 }
 
 .column-c {
   display: block;
-  width: 70%;
-  margin: 15%;
-  background-color: rgba(78, 73, 73, 0.041);
+  width: 80%;
+  margin: 10%;
+  margin-bottom: 15%;
 }
+
 .subcolumn-c1 {
   display: flex;
   height: 12.5%;
@@ -113,14 +121,16 @@
 }
 
 .subcolumn-c1-2 {
+  margin-top: 3%;
   width: 50%;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .subcolumn-c2 {
   height: 75%;
+  background-color: hsla(0, 0%, 85%, 0.25);
 }
 
 .subcolumn-c2-1 {
@@ -135,7 +145,7 @@ textarea {
   padding: 1%;
   background-color: white;
   border: 0px;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid gray;
   margin: 1%;
 }
 
@@ -143,32 +153,62 @@ textarea {
   display: inline-flex;
   padding: 4%;
   padding-left: 15%;
+  padding-right: 10%;
 }
 
 #btn-contact {
   text-align: center;
   color: rgb(0, 0, 0);
-  background-color: rgb(224, 194, 19);
-  padding: 3vh;
+  padding: 1.5vh;
   border-radius: 3rem;
   max-width: 30%;
-  margin-left: 35%;
+  margin-left: 40%;
   font-weight: bold;
   font-size: 1rem;
   border: none;
-  box-shadow: 3px 7px 13px 0px rgba(0, 0, 0, 0.363);
+  background-color: #c34a36;
+  -webkit-box-shadow: -8px 0px 15px -1px rgba(0, 0, 0, 0.62);
+  box-shadow: -8px 0px 15px -1px rgba(0, 0, 0, 0.62);
+}
+
+.contactUsFont {
+  font-size: 1.8rem;
+  text-shadow: 0.5px 0.5px 0.5px d80505;
 }
 
 .contactInfo {
-  padding-left: 5rem;
+  font-size: 1.5rem;
+  padding-left: 3rem;
 }
 
 .contactFS {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .shadowBox {
   box-shadow: 3px 7px 13px 0px rgba(51, 49, 49, 0.363);
+}
+
+.hrStyle {
+  height: 0, 5px;
+  color: d80505;
+  margin: 0%;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+.pSize {
+  font-size: 1.4rem;
+}
+
+.grooveFeature {
+  border-left: 0px ridge #c34a36;
+}
+
+.fa {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
 }
 
 /*footer*/
@@ -184,6 +224,8 @@ footer {
   color: #fff;
   background-color: black;
   flex-direction: column;
+  /* position: fixed; */
+  bottom: 0;
 }
 .footer {
   padding: 0;
@@ -210,6 +252,8 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
+/*media queries Nav bar*/
 
 @media screen and (min-width: 800px) {
   .navbar {
@@ -241,7 +285,8 @@ footer {
   }
   #navquery li a:hover {
     text-decoration: none;
-    background-color: black;
+    border-radius: 3rem;
+    background-color: #0000005e;
     margin: 0;
   }
   #open-slide {
@@ -251,8 +296,6 @@ footer {
   .footer {
     font-size: 10px;
   }
-
-  /*  media querie for contact page */
 
   .m6x4-main {
     display: flex;
@@ -265,23 +308,50 @@ footer {
   }
 
   .column-b {
-    width: 60%;
     margin: 3%;
+    width: 50%;
+    justify-content: center;
   }
 
   .column-c {
-    width: 35%;
+    max-width: 35%;
     margin: 0;
-    background-color: rgba(78, 73, 73, 0.041);
+    position: fixed;
+    right: 0;
+    height: 80%;
+    z-index: 3;
   }
 
   .subcolumn-c1-2 {
-    background-color: rgb(224, 194, 19);
+    margin-top: 0%;
+    background: #c34a36;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    -webkit-box-shadow: -8px 0px 15px -1px rgba(0, 0, 0, 0.62);
+    box-shadow: -8px 0px 15px -1px rgba(0, 0, 0, 0.62);
   }
 
   .shadowBox {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.96);
+  }
+
+  .contactUsFont {
+    font-size: 2.25rem;
+    text-shadow: 1px 2px 2px;
+  }
+
+  .grooveFeature {
+    border-left: 4px ridge #fc0404;
+  }
+  .contactInfo {
+    text-shadow: 0.5px 0.5px 1px;
+  }
+  .hrStyle {
+    height: 2px;
+    color: #fc0404;
+    box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.75);
   }
 }
