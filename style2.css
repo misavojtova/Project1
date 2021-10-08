@@ -4,74 +4,6 @@
 
 /*internet content*/
 
-/*START Buttons */
-.link-buttons {
-  position: relative;
-  display: block;
-  text-align: center;
-}
-.w3 {
-  border: 0;
-  width: 80px;
-  padding: 10px;
-  height: 80px;
-  font-size: 1rem;
-  margin: 15px 20px;
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-  text-shadow: 1px 1px 1px #000;
-  background-color: rgb(3, 138, 25);
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  );
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
-.w3:hover {
-  background-color: rgb(8, 87, 21);
-}
-
-.w3:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.mdn {
-  border: 0;
-  width: 80px;
-  padding: 10px;
-  height: 80px;
-  font-size: 1rem;
-  margin: 15px 20px;
-
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 50%;
-  background-color: rgb(82, 82, 82);
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  );
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.mdn:hover {
-  background-color: rgb(0, 0, 0);
-}
-
-.mdn:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-/* END buttons */
 /* START Page content mobile */
 
 .content-page.top {
@@ -285,6 +217,75 @@ h1 {
     height: 120vh;
   }
 }
+/*inner links sticky*/
+
+/*START Buttons */
+.link-buttons {
+  position: relative;
+  display: block;
+  text-align: center;
+  max-width: 100%;
+}
+.w3 {
+  border: 0;
+  padding: 5px 10px;
+  margin: 15px 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 1.75rem;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(8, 87, 21);
+  background-color: rgb(215, 216, 146);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+.w3:hover {
+  background-color: rgb(158, 158, 106);
+}
+
+.w3:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.mdn {
+  border: 0;
+  padding: 5px 10px;
+  margin: 15px 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 1.75rem;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 1.75rem;
+  background-color: rgb(82, 82, 82);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.mdn:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.mdn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+/* END buttons */
 
 /*inner links sticky*/
 :root {
@@ -308,22 +309,21 @@ h1 {
 }
 
 .inner {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   display: block;
   text-align: center;
   position: relative;
-  color: black;
   background-color: transparent;
   width: auto;
   height: auto;
-  font-size: 10px;
-  padding: 2.5px;
-  margin: 5px;
+  font-size: 15px;
+  padding: 4px;
+  margin: 7.5px;
   border: none;
   outline: none;
-  cursor: pointer;
-  z-index: 9;
+  z-index: 29;
   top: 0;
+  overflow-y: hidden;
 }
 
 .inner::before {
@@ -334,27 +334,30 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0;
+  padding: 2px;
   position: absolute;
   z-index: 7;
 }
 
 .inner:hover::before,
 .inner:focus::before {
-  animation: test 2s ease-in-out;
+  animation: test 0.75s ease-in-out;
 }
-
+.sticky a,
+.sticky a:active,
+.sticky a:visited {
+  text-decoration: none;
+  color: black;
+}
 @keyframes test {
-  0%,
-  100% {
+  0% {
     opacity: 0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
   }
-  33%,
-  66% {
+  100% {
     top: calc(var(--div-border-size) * -2);
     left: calc(var(--div-border-size) * -2);
     right: calc(var(--div-border-size) * -2);
@@ -362,46 +365,44 @@ h1 {
     opacity: 1;
   }
 }
+.ex {
+  display: none;
+}
 
 @media screen and (min-width: 800px) {
+  .ex {
+    display: block;
+  }
   .sticky {
     position: fixed;
     float: right;
     top: 90px;
     left: 90vw;
-    width: 10vw;
-    height: 200px;
+    width: 9vw;
+    height: 300px;
     flex-direction: column;
     justify-content: space-between;
   }
   .inner {
-    padding: 3px 6px;
-    margin: 8px 2px;
+    padding: 9px 6px 4px 6px;
+    margin: 12px 2px;
     font-size: 1.25vw;
-    width: 10vw;
+    width: 7vw;
     height: 5vh;
+    z-index: 9;
+    text-align: center;
+    overflow-y: hidden;
   }
   .inner:hover::before,
   .inner:focus::before {
-    animation: test1 1.5s ease-in-out;
-  }
-  @keyframes test1 {
-    0%,
-    100% {
-      opacity: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-    33%,
-    66% {
-      top: calc(var(--div-border-size) * -2);
-      left: calc(var(--div-border-size) * -2);
-      right: calc(var(--div-border-size) * -2);
-      bottom: calc(var(--div-border-size) * -2);
-      opacity: 0.25;
-      background-color: white;
-    }
+    z-index: -2;
+    border: none;
+    padding: 0;
+    border-radius: 1rem;
+    background-color: #0000005e;
+    color: black;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    animation: none;
   }
 }
