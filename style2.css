@@ -154,7 +154,7 @@ h1 {
   background-color: #f9d51a;
 }
 .title-descrip.css-bg-color {
-  background-color: #0177bd; /**color box */
+  background-color: #289adce0; /**color box */
 }
 .title-descrip.internet-bg-color {
   background-color: blue;
@@ -175,6 +175,11 @@ h1 {
   max-width: 95%;
   align-self: center;
 }
+.img-syntax-css {
+  /*hereeee*/
+  align-self: center;
+}
+
 .img-att {
   max-width: 80%;
   align-self: center;
