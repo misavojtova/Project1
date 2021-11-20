@@ -77,8 +77,13 @@ h2.home-title.diff-col {
   font-size: 4.2rem;
 }
 .icon-title {
-  font-size: 1.2rem;
+  color: rgb(88, 0, 0);
+  font-size: 1.1rem;
+  font-weight: bold;
   margin-top: 0.5rem;
+}
+.icon-title:visited {
+  color: rgb(88, 0, 0);
 }
 
 .direction-icons {
