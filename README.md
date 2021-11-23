@@ -27,7 +27,7 @@ Project <u>From Zero To Hero</u> was made in collaboration with Junior Developer
     <li><a href="#project-example">Project Example</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#installation-and-setup-instructions">Installation</a></li>
-    <li><a href="#contacts">Contacts</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -65,7 +65,7 @@ Clone down this repository:
 
 <!-- CONTACT -->
 
-## Contacts
+## Contact
 
 Michaela Vojtova
 
