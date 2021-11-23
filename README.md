@@ -33,8 +33,8 @@ Project <b>From Zero To Hero</b> was made in collaboration with Junior Developer
 ## Project Example
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/64092039/143065941-7fe21d27-91d2-40b3-87b5-e16378613b6e.png" width="230" height="400"> 
- <img src="https://user-images.githubusercontent.com/64092039/143065879-82b6282a-4508-4c94-967e-722b95bf3634.png" width="600" height="400" >
+  <img src="https://user-images.githubusercontent.com/64092039/143065941-7fe21d27-91d2-40b3-87b5-e16378613b6e.png" width="180" height="300"> 
+ <img src="https://user-images.githubusercontent.com/64092039/143065879-82b6282a-4508-4c94-967e-722b95bf3634.png" width="500" height="300" >
 </p>
 
 
